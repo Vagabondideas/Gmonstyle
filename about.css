@@ -1,0 +1,32 @@
+.about-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: top;
+  background-color: #f162ff;
+  padding: 20px 20px;
+  /* margin-bottom: 40px; */
+}
+.about-txt {
+  font-size: 1.5rem;
+}
+.apropos {
+  margin-bottom: 20px;
+}
+.about {
+  margin-bottom: 15px;
+}
+
+/* .new-container {
+  display: flex;
+  justify-content: center;
+}
+
+.link-style {
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: #320d3e;
+  color: #ffd79d;
+  padding: 8px 16px;
+} */

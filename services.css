@@ -1,0 +1,69 @@
+/* SERVICES CSS */
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 20px;
+
+  /* background: linear-gradient(to left, #d902ee, #ecd5ef); */
+  background: linear-gradient(to right, #f162ff, #320d3e);
+}
+
+.cout {
+  font-size: 1.5rem;
+}
+
+.silhouette-container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  justify-content: center;
+}
+
+.service-pic {
+  width: 100%;
+}
+
+.silhouette-txt {
+  /* margin: auto; */
+  /* background-color: palevioletred; */
+}
+
+.inside {
+  list-style-position: inside;
+  list-style-type: circle;
+}
+.s1 {
+  margin-top: 30px;
+}
+.sLast {
+  margin-bottom: 30px;
+}
+
+.penderie-container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  justify-content: center;
+}
+.coloriemetrie-container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  justify-content: center;
+}
+
+.magasinage-container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  justify-content: center;
+}
+.intro {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
