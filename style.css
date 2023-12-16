@@ -1,0 +1,314 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    /* background-color: #f0f8ff; */
+}
+
+/* Colors
+blue: #401c93ff
+pink: #d7118aff
+back: #fffffdff */
+
+.utility-container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Belleza", sans-serif;
+    font-size: 3.5em;
+}
+
+h2 {
+    font-family: "Belleza", sans-serif;
+    font-size: 2.5rem;
+}
+h3 {
+    font-family: "Belleza", sans-serif;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/* *** HUMBERGER ***  */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #401c93ff;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+        flex-direction: column;
+        position: fixed;
+        left: -100%;
+        top: 64px;
+        gap: 0;
+        background-color: #d7118aff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-items {
+        margin: 10px 0;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+}
+/* END HUMBERGER
+******************************************************** */
+header {
+    background-color: aliceblue;
+}
+
+nav {
+    padding: 1rem 1rem 0;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: bisque; */
+}
+
+.logo-img {
+    width: 100%;
+}
+
+.nav-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-items {
+    list-style: none;
+}
+
+a .nav-item-link {
+    text-decoration: none;
+    color: #401c93ff;
+}
+
+.header-container {
+    padding: 0 1rem;
+    padding-bottom: 2rem;
+    /* background-color: aquamarine; */
+}
+
+.slogan {
+    padding-bottom: 4rem;
+}
+
+.styliste-personnelle {
+    margin-bottom: 4rem;
+}
+
+.mission {
+    line-height: 1.25;
+    padding-bottom: 4rem;
+}
+
+.mj-hero-image {
+    max-width: 100%;
+}
+
+.btn-contact:link,
+.btn-contact:visited {
+    font-size: 1.5rem;
+    background-color: #401c93ff;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 9px;
+    /* position: absolute;
+    left: 50%;
+    transform: translate(-50%); */
+}
+
+/* ** SERVICE SECTION ** */
+
+.flex-services-container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 5rem 0;
+}
+
+.coming-soon {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+/* **** CONTACT SECTION ***** */
+
+#contact-section {
+    padding-top: 1rem;
+    /* background-color: pink; */
+}
+
+.contact-header-container {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+}
+
+.grid-contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.left-side {
+    grid-row: 1/3;
+    display: grid;
+    place-items: center;
+}
+
+.mj-contact-img {
+    max-width: 80%;
+}
+
+.contact-phone-icon {
+    stroke: purple;
+    width: 24px;
+    height: 24px;
+}
+.contact-details-tel {
+    padding: 1em 0;
+}
+
+.contact-details-email {
+    padding-bottom: 1em;
+}
+
+.email-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding-bottom: 1em;
+}
+
+.contact-location-icon {
+    stroke: purple;
+    width: 24px;
+}
+
+/* **** FORM in the Grid-contact-container  *** */
+
+.contact-form-container {
+    width: 100%;
+    /* display: none; */
+    /* background-color: aqua; */
+}
+
+.thank-you-container {
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-control {
+    font-size: 1.23em;
+    width: 100%;
+}
+
+.btn-send-container {
+    display: grid;
+    place-items: center;
+}
+
+.btn-send-form {
+    font-size: 1.5rem;
+    background-color: #401c93ff;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 9px;
+    justify-self: center;
+}
+
+/* *** SERVICES TRIAL **** */
+
+.section-container {
+    background-color: bisque;
+}
+
+.section-title-container {
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+    gap: 50px;
+}
+
+.right-container {
+    max-width: 30%;
+}
+.test-img {
+    width: 100%;
+}
+.bottom-1row-container {
+    text-align: center;
+}
+
+/* ** TESTING GRID ** */
+
+/* .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.bottom-grid-row {
+    grid-column: 1/3;
+    background-color: aquamarine;
+} */
