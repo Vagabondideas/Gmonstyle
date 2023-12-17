@@ -162,6 +162,7 @@ header {
 @media (max-width: 1010px) {
     .slogan {
         font-size: 2rem;
+        color: red;
     }
     .nav-logo-img {
         width: 75%;
