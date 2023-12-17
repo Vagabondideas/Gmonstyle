@@ -37,7 +37,59 @@ p {
     font-size: 1.5rem;
 }
 
-/* *** HUMBERGER ***  */
+header {
+    background-color: #dfd0fbff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    /* LE CONTAINER */
+    width: 1200px;
+    padding: 0 1rem;
+    min-height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo-img {
+    width: 100%;
+}
+
+.nav-menu {
+    /* UL A DROITE DU FLEX CONTAINER */
+    padding-right: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #d7118aff;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+    /* color: #ffd79d; */
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #f162ff;
+}
+
+/* HAMBURGER DIV */
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -50,8 +102,10 @@ p {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    /* background-color: #401c93ff; */
+    background-color: black;
 }
+
+/* SWITCH TO HAMBURGER AND TURN INTO AN X */
 
 @media (max-width: 768px) {
     .hamburger {
@@ -72,7 +126,7 @@ p {
         left: -100%;
         top: 64px;
         gap: 0;
-        background-color: #d7118aff;
+        background-color: #d902ee;
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -86,40 +140,9 @@ p {
 }
 /* END HUMBERGER
 ******************************************************** */
-header {
-    /* background-color: aliceblue; */
+
+.section-hero {
     background-color: #dfd0fbff;
-}
-
-nav {
-    padding: 1rem 1rem;
-    font-size: 1.25rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: bisque; */
-}
-
-.logo-img {
-    width: 100%;
-}
-
-.nav-menu-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.nav-items {
-    list-style: none;
-}
-
-.nav-item-link {
-    text-decoration: none;
-    font-weight: 700;
-    /* color: #401c93ff; */
-    color: #d7118aff;
 }
 
 .grid-hero-container {
@@ -134,6 +157,15 @@ nav {
     font-family: "Belleza", sans-serif;
     font-size: 3.5rem;
     padding-bottom: 1rem;
+}
+
+@media (max-width: 1010px) {
+    .slogan {
+        font-size: 2rem;
+    }
+    .nav-logo-img {
+        width: 75%;
+    }
 }
 
 .styliste-personnelle {
