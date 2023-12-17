@@ -159,7 +159,7 @@ header {
     padding-bottom: 1rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56em) {
     .slogan {
         font-size: 2rem;
         color: red;
