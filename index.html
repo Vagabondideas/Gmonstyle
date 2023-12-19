@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="icon" href="favicon2.ico" />
+
+        <link rel="icon" href="favicon.ico" />
+
+        <link rel="stylesheet" href="css/general.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/queries.css" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,27 +17,27 @@
             href="https://fonts.googleapis.com/css2?family=Belleza&family=Lato:wght@300;400;700&display=swap"
             rel="stylesheet"
         />
-        <title>monStyle</title>
+        <title>monStyle - desktop</title>
     </head>
 
     <body>
-        <header>
-            <nav class="navbar">
+        <header class="header">
+            <nav class="nav-container">
                 <a class="nav-logo-link">
                     <img
                         class="nav-logo-img"
                         src="images/Logo_Name_350x75.png"
                     />
                 </a>
-                <ul class="nav-menu">
+                <ul class="nav-main-menu">
                     <li class="nav-items">
-                        <a href="about.html" class="nav-link">À propos</a>
+                        <a href="#" class="nav-main-link">À propos</a>
                     </li>
                     <li class="nav-items">
-                        <a href="services.html" class="nav-link">Services</a>
+                        <a href="#" class="nav-main-link">Services</a>
                     </li>
                     <li class="nav-items">
-                        <a href="contact.html" class="nav-link">Contact</a>
+                        <a href="#" class="nav-main-link">Contact</a>
                     </li>
                 </ul>
 
@@ -46,35 +50,31 @@
         </header>
 
         <section class="section-hero">
-            <div class="utility-container">
-                <!-- <div class="slogan">
-                    <h1>Affichez votre personnalité</h1>
-                </div> -->
+            <div class="container">
                 <div class="grid-hero-container">
-                    <div class="grid-left">
+                    <div class="hero-text-box">
                         <h1 class="slogan">Affichez votre personnalité</h1>
-                        <h1>Marie-Josée Gagné</h1>
-                        <h2 class="styliste-personnelle">
-                            Styliste personnelle
-                        </h2>
+                        <h1 class="name">Marie-Josée Gagné</h1>
+                        <h2 class="title">Styliste personnelle</h2>
 
                         <p class="mission">
-                            Mon but est de vous aider à améliorer votre style
-                            vestimentaire. Je vous aide à choisir les vêtements
-                            qui vous conviennent le mieux et à créer des looks
-                            qui reflètent votre personnalité.
+                            Mon but est de vous guider dans le choix de votre
+                            style vestimentaire. Je vous aide à choisir les
+                            vêtements qui conviennent le mieux à votre
+                            silhouette et à créer des looks qui reflètent votre
+                            personnalité.
                         </p>
 
-                        <a href="#contact-section" class="btn-contact"
+                        <a class="btn-contact-link" href="#contact-section"
                             >Demandez un conseil</a
                         >
                     </div>
 
-                    <div class="grid-right">
+                    <div class="heor-img-box">
                         <img
-                            class="mj-hero-image"
+                            class="hero-img"
+                            alt="marie-josée gagné avec garde-robe"
                             src="images/mj_header.png"
-                            alt="marie-josee gagne"
                         />
                     </div>
                 </div>
@@ -82,7 +82,7 @@
         </section>
 
         <section class="service-section">
-            <div class="utility-container">
+            <div class="container">
                 <div class="flex-services-container">
                     <p class="coming-soon">
                         Mes services seront disponibles bientôt
@@ -92,23 +92,25 @@
         </section>
 
         <section id="contact-section">
-            <div class="utility-container">
-                <!-- <div class="contact-header-container">
-                    <h2>Pour me rejoindre</h2>
-                </div> -->
+            <div class="container">
+                <div class="contact-sub-header">
+                    <h3 class="sub-header">Pour me rejoindre:</h3>
+                </div>
 
                 <div class="grid-contact-container">
-                    <div class="left-side">
+                    <div class="contact-img-box">
                         <img
-                            class="mj-contact-img"
+                            class="contact-img"
+                            alt="photo de marie-josée gagné"
                             src="images/mj_contact_798x1200.jpg"
-                            alt="marie-josee contact"
                         />
                     </div>
-                    <div class="right-side">
-                        <h2>Marie-Josée Gagné</h2>
-                        <h3>Styliste personnelle</h3>
-                        <p class="contact-details-tel">
+                    <div class="contact-text-box">
+                        <h1 class="name">Marie-Josée Gagné</h1>
+                        <h2 class="title title-contact">
+                            Styliste personnelle
+                        </h2>
+                        <p class="contact-details tel">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -126,7 +128,7 @@
                             &nbsp 613-406-1966
                         </p>
 
-                        <p class="contact-details-email">
+                        <p class="contact-details email">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -148,7 +150,7 @@
                             >
                         </p>
 
-                        <p class="contact-details-location">
+                        <p class="contact-details location">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -170,17 +172,17 @@
                             </svg>
                             &nbsp Notre-Dame-des-Pins, QC
                         </p>
-                        <!-- End right-side div   -->
                     </div>
 
-                    <div class="thank-you-container">
+                    <!-- IMPLEMENT LATER IF Formsubmit IS USED 
+                        <div class="thank-you-container">
                         <p>Merci pour votre message</p>
                         <p>Je vous contacterai des que possible</p>
-                    </div>
+                    </div> -->
 
                     <form
                         class="contact-form-container"
-                        action="https://formsubmit.co/va2aj@outlook.com"
+                        action="https://formsubmit.co/info@gmonstyle.ca"
                         method="post"
                     >
                         <div class="form-group">

@@ -1,94 +1,46 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Lato", sans-serif;
-}
-
-/* Colors
-blue: #401c93ff
-background: #dfd0fbff
-pink: #d7118aff
-back: #fffffdff */
-
-.utility-container {
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-h1 {
-    font-family: "Belleza", sans-serif;
-    font-size: 3.5rem;
-}
-
-h2 {
-    font-family: "Belleza", sans-serif;
-    font-size: 2.5rem;
-}
-h3 {
-    font-family: "Belleza", sans-serif;
-    font-size: 2rem;
-}
-
-p {
-    font-size: 1.5rem;
-}
-
-header {
+.header {
     background-color: #dfd0fbff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navbar {
-    /* LE CONTAINER */
+.nav-container {
     width: 1200px;
-    padding: 0 1rem;
-    min-height: 64px;
+    padding: 2rem 2rem 0rem 2rem;
+    /* min-height: 64px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav-logo-img {
-    width: 100%;
+    width: 80%;
 }
 
-.nav-menu {
-    /* UL A DROITE DU FLEX CONTAINER */
+.nav-main-menu {
+    list-style: none;
     padding-right: 2.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
 }
 
-.navbar li {
-    list-style: none;
-}
-
-.navbar a {
+.nav-main-link {
     text-decoration: none;
-    color: #d7118aff;
-}
-
-.nav-link {
+    /* color: #401c93ff; */
+    color: black;
     transition: 0.7s ease;
-    /* color: #ffd79d; */
     font-size: 1.25rem;
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.nav-link:hover {
-    color: #f162ff;
-}
-
-/* HAMBURGER DIV */
+/* .nav-main-link:hover {
+    background-color: #f1a7d5;
+    padding: 1rem;
+} */
 
 .hamburger {
     display: none;
@@ -105,48 +57,12 @@ header {
     background-color: black;
 }
 
-/* SWITCH TO HAMBURGER AND TURN INTO AN X */
-
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    .nav-menu {
-        flex-direction: column;
-        position: fixed;
-        left: -100%;
-        top: 64px;
-        gap: 0;
-        background-color: #d902ee;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-    .nav-items {
-        margin: 10px 0;
-    }
-    .nav-menu.active {
-        left: 0;
-    }
-}
-/* END HUMBERGER
-******************************************************** */
-
 .section-hero {
     background-color: #dfd0fbff;
 }
 
 .grid-hero-container {
-    padding: 5rem 1rem;
+    padding: 2rem 2rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 3.5rem;
@@ -155,35 +71,29 @@ header {
 
 .slogan {
     font-family: "Belleza", sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.name {
     font-size: 3.5rem;
-    padding-bottom: 1rem;
 }
 
-@media (max-device-width: 1010px) {
-    .slogan {
-        font-size: 2rem;
-        color: red;
-    }
-    .nav-logo-img {
-        width: 75%;
-    }
+.title {
+    font-size: 2.5rem;
+    padding-bottom: 3.5rem;
 }
 
-.styliste-personnelle {
-    margin-bottom: 4rem;
+.title-contact {
+    padding-bottom: 1.5rem;
 }
 
 .mission {
     line-height: 1.25;
-    padding-bottom: 4rem;
+    padding-bottom: 3.5rem;
 }
 
-.mj-hero-image {
-    max-width: 100%;
-}
-
-.btn-contact:link,
-.btn-contact:visited {
+.btn-contact-link {
     font-size: 1.5rem;
     background-color: #401c93ff;
     color: white;
@@ -194,6 +104,10 @@ header {
     /* position: absolute;
     left: 50%;
     transform: translate(-50%); */
+}
+
+.hero-img {
+    max-width: 100%;
 }
 
 /* ** SERVICE SECTION ** */
@@ -218,11 +132,11 @@ header {
     background-color: #dfd0fbff;
 }
 
-.contact-header-container {
+/* .contact-header-container {
     display: flex;
     justify-content: center;
     height: 5rem;
-}
+} */
 
 .grid-contact-container {
     display: grid;
@@ -233,28 +147,33 @@ header {
     padding: 5rem 0;
 }
 
-.left-side {
+.contact-img-box {
     grid-row: 1/3;
     display: grid;
     place-items: center;
 }
 
-.mj-contact-img {
+.contact-img {
     max-width: 80%;
+    /* padding-left: 1.5rem; */
 }
+
+/* .contact-text-box {
+    padding-right: 3rem;
+} */
 
 .contact-phone-icon {
     stroke: purple;
     width: 24px;
     height: 24px;
 }
-.contact-details-tel {
-    padding: 1em 0;
+.contact-details {
+    padding: 1rem 0;
 }
 
-.contact-details-email {
+/* .contact-details-email {
     padding-bottom: 1em;
-}
+} */
 
 .email-link {
     cursor: pointer;
@@ -273,6 +192,8 @@ header {
 
 .contact-form-container {
     width: 100%;
+    place-items: center;
+    padding-right: 2rem;
     /* display: none; */
     /* background-color: aqua; */
 }
@@ -282,11 +203,11 @@ header {
 }
 
 .form-group {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
 }
 
 .form-control {
-    font-size: 1.23em;
+    font-size: 1.25rem;
     width: 100%;
 }
 

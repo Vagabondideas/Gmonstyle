@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/* Colors
+#401c93ff
+background: #dfd0fbff
+
+#d7118aff
+background
+back: #fffffdff */
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h1 {
+    font-family: "Belleza", sans-serif;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-family: "Belleza", sans-serif;
+    font-size: 2.5rem;
+}
+h3 {
+    font-family: "Belleza", sans-serif;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.sub-header {
+    font-size: 2rem;
+}
