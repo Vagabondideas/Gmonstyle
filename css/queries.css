@@ -39,16 +39,20 @@
     .grid-hero-container {
         grid-template-columns: 1.5fr 1fr;
     }
-    .slogan {
+    /* .slogan {
         color: blue;
         font-size: 1.75rem;
-    }
+    } */
 
     .grid-hero-container {
         gap: 1.5rem;
     }
-    .slogan {
+    /* .slogan {
         padding-bottom: 1.5rem;
+    } */
+
+    .sub-header {
+        font-size: 1.75rem;
     }
     .name {
         font-size: 2.5rem;
@@ -96,14 +100,17 @@
     }
 }
 
-/* *****  BELOW 700 - because of hero title **** */
+/* *****  BELOW 700 - Ajust hero title (name) **** */
 @media (max-width: 44em) {
     .nav-logo-img {
         width: 50%;
     }
-    .slogan {
-        font-size: 1.25rem;
+    .nav-container {
+        padding: 1rem 1rem 0rem 2rem;
     }
+    /* .sub-header {
+        font-size: 1.25rem;
+    } */
     .name {
         font-size: 2rem;
     }
@@ -123,21 +130,24 @@
     }
 }
 
-/* TARGET BELOW 480px - mobile phone */
-@media (max-width: 30em) {
-    .nav-logo-img {
-        width: 75%;
+/* TARGET BELOW 520px - mobile phone */
+@media (max-width: 33em) {
+    .nav-container {
+        padding: 1rem 1rem;
+    }
+    .sub-header-box {
+        padding: 0rem 0rem 0rem 1rem;
+    }
+    .sub-header {
+        font-size: 1.25rem;
     }
     .grid-hero-container {
+        height: 100vh;
         padding: 1rem 1rem;
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-    .slogan {
-        color: red;
-        font-size: 1.25rem;
-        padding-bottom: 1.5rem;
-    }
+
     .name {
         font-size: 1.75rem;
     }
@@ -148,6 +158,10 @@
     .mission {
         font-size: 1rem;
         padding-bottom: 1.5rem;
+    }
+
+    .hero-img {
+        max-width: 100%;
     }
     .btn-contact-link {
         justify-self: center;
@@ -170,11 +184,6 @@
     /* .contact-img {
         display: none;
     } */
-
-    .sub-header {
-        font-size: 1.25rem;
-        margin: 0 1rem;
-    }
 
     .contact-text-box {
         padding-right: 1rem;
