@@ -136,18 +136,54 @@
     line-height: 1.5;
 }
 
-/* ** SERVICE SECTION ** */
+/* ** SERVICES SECTION ** */
 
-.flex-services-container {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    margin: 5rem 0;
+.services-section {
+    /* background-color: rgb(241, 241, 246); */
+    padding: 3.5rem 0rem;
 }
 
-.coming-soon {
-    font-size: 3.5rem;
-    text-align: center;
+.services-img-box {
+    display: flex;
+    padding: 0rem 0rem 2rem 2rem;
+}
+
+.grid-services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0rem 2rem 0rem 2rem;
+    /* gap: 2rem; */
+    /* background-color: aqua; */
+}
+.service-box {
+    /* display: flex;
+    flex-direction: column; */
+    border-left: solid red;
+    padding: 0rem 2rem;
+}
+.service-box-last {
+    border-left: solid red;
+    border-right: solid red;
+    padding: 0 2rem;
+}
+
+.service-header {
+    justify-self: center;
+    padding-bottom: 1rem;
+}
+.service-text {
+    font-size: 1.25rem;
+    padding-bottom: 2rem;
+}
+
+.btn-more {
+    font-size: 1rem;
+    background-color: #401c93ff;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 9px;
 }
 
 /* **** CONTACT SECTION ***** */

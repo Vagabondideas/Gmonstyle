@@ -99,12 +99,6 @@
         justify-self: center;
         cursor: pointer;
     }
-
-    .center-me {
-        display: grid;
-        place-items: center;
-        align-items: center;
-    }
 }
 
 /* *****  BELOW 700 - Ajust hero title (name) **** */
