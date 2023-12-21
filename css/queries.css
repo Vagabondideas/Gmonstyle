@@ -1,5 +1,5 @@
 /* ****** HAMBURGER ********* */
-/* TARGET BELOW 850px - tablet */
+/* TARGET BELOW 848px - tablet */
 @media (max-width: 53em) {
     .hamburger {
         display: block;
@@ -38,18 +38,11 @@
     }
     .grid-hero-container {
         grid-template-columns: 1.5fr 1fr;
-    }
-    /* .slogan {
-        color: blue;
-        font-size: 1.75rem;
-    } */
-
-    .grid-hero-container {
         gap: 1.5rem;
     }
-    /* .slogan {
-        padding-bottom: 1.5rem;
-    } */
+    .grid-about-container {
+        gap: 1rem;
+    }
 
     .sub-header {
         font-size: 1.75rem;
@@ -62,8 +55,16 @@
         padding-bottom: 1.5rem;
     }
     .mission {
-        font-size: 1rem;
+        font-size: 1.25rem;
         padding-bottom: 2rem;
+    }
+    .about-text {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .about-img {
+        max-width: 100%;
     }
     .btn-contact-link {
         font-size: 1.25rem;
@@ -98,6 +99,12 @@
         justify-self: center;
         cursor: pointer;
     }
+
+    .center-me {
+        display: grid;
+        place-items: center;
+        align-items: center;
+    }
 }
 
 /* *****  BELOW 700 - Ajust hero title (name) **** */
@@ -114,10 +121,12 @@
     .name {
         font-size: 2rem;
     }
+    .contact-details {
+        font-size: 1rem;
+    }
 }
 
 /* ***** BELOW 600 - DELETE CONTACT IMG **** */
-
 @media (max-width: 38em) {
     .contact-img {
         display: none;
@@ -141,10 +150,11 @@
     .sub-header {
         font-size: 1.25rem;
     }
-    .grid-hero-container {
-        padding: 1rem 1rem;
-        grid-template-columns: 1fr;
 
+    .grid-hero-container {
+        /* padding: 1rem 1rem; */
+        padding: 0rem 1rem;
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
@@ -157,6 +167,12 @@
     }
     .mission {
         font-size: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        line-height: 1rem;
         padding-bottom: 1.5rem;
     }
 
