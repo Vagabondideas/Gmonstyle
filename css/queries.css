@@ -133,7 +133,7 @@
 /* TARGET BELOW 520px - mobile phone */
 @media (max-width: 33em) {
     .nav-container {
-        padding: 1rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
     }
     .sub-header-box {
         padding: 0rem 0rem 0rem 1rem;
@@ -142,7 +142,6 @@
         font-size: 1.25rem;
     }
     .grid-hero-container {
-        height: 100vh;
         padding: 1rem 1rem;
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -160,8 +159,13 @@
         padding-bottom: 1.5rem;
     }
 
+    .hero-img-box {
+        justify-self: center;
+    }
+
     .hero-img {
-        max-width: 100%;
+        max-width: 50%;
+        justify-self: center;
     }
     .btn-contact-link {
         justify-self: center;
