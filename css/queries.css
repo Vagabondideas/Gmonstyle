@@ -144,6 +144,7 @@
     .grid-hero-container {
         padding: 1rem 1rem;
         grid-template-columns: 1fr;
+
         gap: 1rem;
     }
 
@@ -159,13 +160,13 @@
         padding-bottom: 1.5rem;
     }
 
-    .hero-img-box {
-        justify-self: center;
+    .center-me {
+        display: grid;
+        place-items: center;
     }
 
     .hero-img {
         max-width: 50%;
-        justify-self: center;
     }
     .btn-contact-link {
         justify-self: center;
