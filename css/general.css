@@ -7,6 +7,7 @@
 body {
     font-family: "Lato", sans-serif;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 /* Colors
@@ -50,6 +51,7 @@ p {
 
 .sub-header {
     font-size: 2.5rem;
+    color: red;
 }
 
 .center-me {
