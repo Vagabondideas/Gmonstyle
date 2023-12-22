@@ -147,36 +147,26 @@
 
 /* TARGET BELOW 528px - mobile phone */
 @media (max-width: 33em) {
-    /* .nav-container {
-        padding: 1rem 1rem 1rem 1rem;
-    } */
-
     .nav-container {
-        margin: 0.5rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
     }
-
-    /* .sub-header-box {
-        padding: 0rem 0rem 0rem 1rem;
-    } */
 
     .sub-header-box {
-        margin: 0 1rem;
+        padding: 0rem 0rem 0rem 1rem;
     }
+
     .sub-header {
         font-size: 1.25rem;
         padding-bottom: 1rem;
     }
 
     .grid-hero-container {
-        /*  
-        padding: 0rem 1rem; */
-        margin: 0 1rem;
+        padding: 0rem 1rem;
         grid-template-columns: 1fr;
         gap: 1rem;
     }
     .grid-about-container {
-        /* padding: 0rem 1rem 0rem 1rem; */
-        margin: 0 1rem;
+        padding: 0rem 1rem 0rem 1rem;
         grid-template-columns: 1fr 2fr;
         gap: 1.5rem;
     }
