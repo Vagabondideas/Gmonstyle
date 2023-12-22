@@ -107,7 +107,7 @@
         width: 50%;
     }
     .nav-container {
-        padding: 1rem 1rem 0rem 2rem;
+        padding: 1rem 1rem 1rem 2rem;
     }
     /* .sub-header {
         font-size: 1.25rem;
@@ -131,9 +131,18 @@
         gap: 1rem;
         padding: 0rem 1rem;
     }
+    .about-text-2 {
+        display: none;
+    }
+    .about-img {
+        padding-bottom: 1.5rem;
+    }
+    .btn-more-about-me {
+        display: block;
+    }
 }
 
-/* TARGET BELOW 520px - mobile phone */
+/* TARGET BELOW 528px - mobile phone */
 @media (max-width: 33em) {
     .nav-container {
         padding: 1rem 1rem 1rem 1rem;
@@ -143,6 +152,7 @@
     }
     .sub-header {
         font-size: 1.25rem;
+        padding-bottom: 1rem;
     }
 
     .grid-hero-container {
@@ -150,6 +160,17 @@
         padding: 0rem 1rem;
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+    .grid-about-container {
+        padding: 0rem 1rem 0rem 1rem;
+        grid-template-columns: 1fr 2fr;
+        gap: 1.5rem;
+    }
+
+    .grid-services-container {
+        padding: 0rem 1rem 1rem 1rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .name {
@@ -164,15 +185,14 @@
         padding-bottom: 1.5rem;
     }
 
-    .about-text {
+    .about-text-1 {
         font-size: 1rem;
-        line-height: 1rem;
+        line-height: 1.5rem;
         padding-bottom: 1.5rem;
     }
 
-    .center-me {
-        display: grid;
-        place-items: center;
+    .service-text {
+        padding-bottom: 1rem;
     }
 
     .hero-img {
@@ -185,20 +205,10 @@
         color: white;
         text-decoration: none;
         display: inline-block;
-        padding: 4px 8px;
+        padding: 8px 16px;
         border-radius: 9px;
+        cursor: pointer;
     }
-
-    /* .grid-contact-container {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        gap: 1rem;
-        padding: 0rem 1rem;
-    } */
-
-    /* .contact-img {
-        display: none;
-    } */
 
     .contact-text-box {
         padding-right: 1rem;
