@@ -224,28 +224,40 @@
     max-width: 100%;
 }
 
+.contact-text-box {
+    padding-bottom: 1rem;
+}
 .contact-name {
     padding-bottom: 1.5rem;
 }
+
+.contact-details {
+    padding: 0rem 0rem 1rem 0rem;
+    font-size: 1.25rem;
+}
+
 .contact-phone-icon {
     stroke: purple;
     width: 24px;
     height: 24px;
 }
-/* .contact-details {
-    padding: 1rem 0;
-} */
 
 /* .contact-details-email {
     padding-bottom: 1em;
 } */
 
-.email-link {
+.email-link,
+.location-link {
     cursor: pointer;
     text-decoration: none;
     color: black;
-    font-size: 2rem;
-    padding-bottom: 1em;
+    /* font-size: 1.25rem;
+    padding-bottom: 1em; */
+}
+
+.email-link:hover,
+.location-link:hover {
+    background-color: palevioletred;
 }
 
 .contact-location-icon {

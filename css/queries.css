@@ -1,3 +1,13 @@
+/* ****** GRID-CONTACT to fix img and FORM at 1000px ******* */
+@media (max-width: 63em) {
+    .contact-img-box {
+        grid-row: 1/2;
+    }
+    .contact-form-container {
+        grid-column: 1/3;
+    }
+}
+
 /* ****** HAMBURGER ********* */
 /* TARGET BELOW 848px - tablet */
 @media (max-width: 53em) {
@@ -101,7 +111,7 @@
     }
 }
 
-/* *****  BELOW 700 - Ajust hero title (name) **** */
+/* *****  BELOW 700 - Ajust hero title (name) and Form **** */
 @media (max-width: 44em) {
     .nav-logo-img {
         width: 50%;
@@ -109,28 +119,21 @@
     .nav-container {
         padding: 1rem 1rem 1rem 2rem;
     }
-    /* .sub-header {
-        font-size: 1.25rem;
-    } */
+
     .name {
         font-size: 2rem;
     }
-    .contact-details {
-        font-size: 1rem;
-    }
-}
 
-/* ***** BELOW 600 - DELETE CONTACT IMG **** */
-@media (max-width: 38em) {
-    .contact-img {
-        display: none;
-    }
     .grid-contact-container {
         grid-template-columns: 1fr;
         justify-items: center;
         gap: 1rem;
         padding: 0rem 1rem;
     }
+}
+
+/* ***** BELOW 600 - DELETE CONTACT IMG **** */
+@media (max-width: 38em) {
     .about-text-2 {
         display: none;
     }
@@ -173,6 +176,21 @@
         gap: 2rem;
     }
 
+    .grid-contact-container {
+        padding: 0rem 1rem;
+        gap: 1rem;
+    }
+
+    .contact-phone-icon {
+        stroke: purple;
+        width: 16px;
+        height: 16px;
+    }
+    .contact-location-icon {
+        stroke: purple;
+        width: 16px;
+    }
+
     .name {
         font-size: 1.75rem;
     }
@@ -210,10 +228,6 @@
         cursor: pointer;
     }
 
-    .contact-text-box {
-        padding-right: 1rem;
-    }
-
     .title-contact {
         padding-bottom: 1.5rem;
     }
@@ -222,11 +236,11 @@
         font-size: 1rem;
     }
     .email-link {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
-    .contact-form-container {
+    /* .contact-form-container {
         padding-right: 1rem;
-    }
+    } */
     .form-control {
         font-size: 1rem;
     }
