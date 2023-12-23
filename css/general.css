@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
+html,
 body {
     font-family: "Lato", sans-serif;
     overflow-x: hidden;
-    max-width: 100%;
+}
+body {
+    position: relative;
 }
 
 /* Colors
@@ -51,7 +54,7 @@ p {
 
 .sub-header {
     font-size: 2.5rem;
-    color: blue;
+    color: red;
 }
 
 .center-me {
