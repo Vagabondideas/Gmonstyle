@@ -14,8 +14,6 @@
     .hamburger {
         display: block;
     }
-
-    /* ***** TURN INTO AN X WHEN ACTIVE ****** */
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -26,22 +24,33 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .nav-main-menu.active {
+    .nav-menu.active {
         left: 0;
     }
-    .nav-main-menu {
+    .nav-menu {
         flex-direction: column;
         position: fixed;
         left: -100%;
         top: 64px;
-        gap: 0;
-        background-color: #fffffdff;
+        gap: 8px;
+        background-color: #27005d;
+        padding: 8px 0px;
         width: 100%;
         text-align: center;
         transition: 0.3s;
     }
-    .nav-items {
-        margin: 10px 0;
+    /* .nav-items {
+        margin: 5px 0;
+    } */
+
+    .nav-link {
+        color: #dfd0fbff;
+        font-size: 0.75rem;
+    }
+    .nav-link:hover {
+        background-color: #d800a6;
+        padding: 4px 8px;
+        color: #dfd0fbff;
     }
     .nav-logo-img {
         width: 80%;
@@ -132,9 +141,9 @@
     }
 }
 
-/* ***** BELOW 600 - DELETE CONTACT IMG **** */
+/* ***** BELOW 608 - ADJUST ABOUT ME **** */
 @media (max-width: 38em) {
-    .about-text-2 {
+    .more {
         display: none;
     }
     .about-img {
@@ -142,6 +151,7 @@
     }
     .btn-more-about-me {
         display: block;
+        font-size: 0.75rem;
     }
 }
 
@@ -168,7 +178,7 @@
     .grid-about-container {
         padding: 0rem 1rem 0rem 1rem;
         grid-template-columns: 1fr 2fr;
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .grid-services-container {
@@ -204,7 +214,7 @@
         padding-bottom: 1.5rem;
     }
 
-    .about-text-1 {
+    .about-text {
         font-size: 1rem;
         line-height: 1.5rem;
         padding-bottom: 1.5rem;

@@ -18,7 +18,7 @@
     width: 80%;
 }
 
-.nav-main-menu {
+.nav-menu {
     list-style: none;
     padding-right: 2.5rem;
     display: flex;
@@ -27,20 +27,20 @@
     gap: 2rem;
 }
 
-.nav-main-link {
+.nav-link {
     text-decoration: none;
-    /* color: #401c93ff; */
-    color: black;
+    color: #49108b;
     transition: 0.7s ease;
     font-size: 1.25rem;
     font-weight: 400;
     text-transform: uppercase;
 }
 
-/* .nav-main-link:hover {
-    background-color: #f1a7d5;
-    padding: 1rem;
-} */
+.nav-link:hover {
+    color: #dfd0fbff;
+    background: #27005d;
+    padding: 4px 8px 4px 8px;
+}
 
 .hamburger {
     display: none;
@@ -90,15 +90,19 @@
 
 .btn-contact-link {
     font-size: 1.5rem;
-    background-color: #401c93ff;
-    color: white;
+    /* background-color: #401c93ff;
+    color: white; */
+    background-color: #49108b;
+    color: #dfd0fbff;
     text-decoration: none;
     display: inline-block;
     padding: 16px 32px;
     border-radius: 9px;
-    /* position: absolute;
-    left: 50%;
-    transform: translate(-50%); */
+}
+
+.btn-contact-link:hover {
+    background-color: #d800a6;
+    color: black;
 }
 
 .hero-img {
@@ -108,7 +112,7 @@
 /* ** ABOUT SECTION ** */
 
 .about-section {
-    background-color: rgb(241, 241, 246);
+    background-color: #f3f8ff;
     padding: 3.5rem 0rem;
 }
 .grid-about-container {
@@ -140,18 +144,37 @@
     cursor: pointer;
     display: none;
 }
-.about-text-1,
-.about-text-2 {
+
+.about-text {
     font-size: 1.25rem;
     line-height: 1.75rem;
     padding-bottom: 2rem;
-    /* line-height: 1.5; */
+}
+
+.modal-about-me {
+    position: relative;
+    padding-top: 3rem;
+    background-color: #f3f8ff;
+    /* grid-column: 1/3; */
+}
+.btn-close-modal-about-me,
+.btn-close-modal-serv1,
+.btn-close-modal-serv2,
+.btn-close-modal-serv3 {
+    position: absolute;
+    top: 0rem;
+    right: 2rem;
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
 }
 
 /* ** SERVICES SECTION ** */
 
 .services-section {
-    /* background-color: rgb(241, 241, 246); */
+    background-color: #dfd0fbff;
     padding: 3.5rem 0rem;
 }
 
@@ -164,8 +187,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0rem 2rem 0rem 2rem;
-    /* gap: 2rem; */
-    /* background-color: aqua; */
 }
 .service-box {
     /* display: flex;
@@ -188,7 +209,18 @@
     padding-bottom: 2rem;
 }
 
-.btn-more {
+.modal-serv1,
+.modal-serv2,
+.modal-serv3 {
+    position: relative;
+    padding-top: 3rem;
+    background-color: #dfd0fbff;
+    /* grid-column: 1/3; */
+}
+
+.btn-more-serv1,
+.btn-more-serv2,
+.btn-more-serv3 {
     font-size: 1rem;
     background-color: #401c93ff;
     color: white;
@@ -203,7 +235,7 @@
 
 #contact-section {
     padding: 3.5rem 0rem;
-    background-color: #dfd0fbff;
+    background-color: #f3f8ff;
 }
 
 .grid-contact-container {
@@ -242,22 +274,18 @@
     height: 24px;
 }
 
-/* .contact-details-email {
-    padding-bottom: 1em;
-} */
-
 .email-link,
 .location-link {
     cursor: pointer;
     text-decoration: none;
     color: black;
-    /* font-size: 1.25rem;
-    padding-bottom: 1em; */
 }
 
 .email-link:hover,
 .location-link:hover {
-    background-color: palevioletred;
+    color: #dfd0fbff;
+    background: #27005d;
+    padding: 4px 8px 4px 8px;
 }
 
 .contact-location-icon {
@@ -296,8 +324,8 @@
 
 .btn-send-form {
     font-size: 1.5rem;
-    background-color: #401c93ff;
-    color: white;
+    background-color: #49108b;
+    color: #dfd0fbff;
     text-decoration: none;
     display: inline-block;
     padding: 16px 32px;
@@ -306,22 +334,28 @@
     cursor: pointer;
 }
 
-/* *** FOOTER *** */
-footer {
-    background-color: black;
-}
-.grid-footer-container {
-    padding: 2rem 1rem;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2.5rem;
-    justify-items: center;
-    align-items: center;
-    color: white;
+.btn-send-form:hover {
+    background-color: #d800a6;
+    color: black;
 }
 
-.google {
-    width: 100%;
+/* *** FOOTER *** */
+footer {
+    background-color: #27005d;
+}
+.grid-footer-container {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    justify-items: center;
+    /* align-items: center; */
+}
+
+.footer-info {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    color: #dfd0fbff;
 }
 
 /* *** SERVICES TRIAL **** */

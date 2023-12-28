@@ -29,15 +29,15 @@
                         src="images/Logo_Name_350x75.png"
                     />
                 </a>
-                <ul class="nav-main-menu">
+                <ul class="nav-menu">
                     <li class="nav-items">
-                        <a href="#" class="nav-main-link">À propos</a>
+                        <a href="#" class="nav-link">À propos</a>
                     </li>
                     <li class="nav-items">
-                        <a href="#" class="nav-main-link">Services</a>
+                        <a href="#" class="nav-link">Services</a>
                     </li>
                     <li class="nav-items">
-                        <a href="#" class="nav-main-link">Contact</a>
+                        <a href="#" class="nav-link">Contact</a>
                     </li>
                 </ul>
 
@@ -107,7 +107,7 @@
                             <btn class="btn-more-about-me">En savoir plus</btn>
                         </div>
                         <div class="about-text-box">
-                            <p class="about-text-1">
+                            <p class="about-text intro">
                                 Passionnée par l’univers de la mode et des
                                 accessoires, dotée d'une formation en tant
                                 qu'hôtesse d'accueil et ayant participé à des
@@ -118,7 +118,8 @@
                                 suivre une formation auprès de l'école renommée
                                 "Les Effrontés" à Montréal.
                             </p>
-                            <p class="about-text-2">
+
+                            <p class="about-text more">
                                 Ensemble nous allons mettre en valeur vos atouts
                                 et revisiter votre beauté en harmonisant les
                                 couleurs et en jouant avec les accessoires
@@ -126,6 +127,20 @@
                                 découverte de votre style personnel tout en
                                 respectant scrupuleusement votre budget.
                             </p>
+                            <div class="modal-about-me hidden">
+                                <button class="btn-close-modal-about-me">
+                                    &times;
+                                </button>
+                                <p class="about-text">
+                                    Ensemble nous allons mettre en valeur vos
+                                    atouts et revisiter votre beauté en
+                                    harmonisant les couleurs et en jouant avec
+                                    les accessoires indispensables. Nous allons
+                                    partir à la découverte de votre style
+                                    personnel tout en respectant scrupuleusement
+                                    votre budget.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -147,7 +162,7 @@
                         />
                     </div>
                     <div class="grid-services-container">
-                        <div class="service-box">
+                        <div class="service-box first">
                             <h3 class="service-header">
                                 Optimiser votre silhouette
                             </h3>
@@ -159,26 +174,73 @@
                                 fugit, exercitationem at sapiente repudiandae
                                 deleniti ducimus maiores!
                             </p>
+
+                            <div class="modal-serv1 hidden">
+                                <button class="btn-close-modal-serv1">
+                                    &times;
+                                </button>
+                                <p class="service-text more-serv1">
+                                    Place holder - Serv-1 - KNOW MORE - Lorem
+                                    ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Ex nam placeat quasi ea
+                                    fuga nostrum! Dolorum architecto cumque, ad
+                                    quam doloremque, dicta fugit, exercitationem
+                                    at sapiente repudiandae deleniti ducimus
+                                    maiores!
+                                </p>
+                            </div>
+
                             <div class="center-me">
-                                <btn class="btn-more">Détails</btn>
+                                <btn class="btn-more-serv1">Détails</btn>
                             </div>
                         </div>
-                        <div class="service-box">
+                        <div class="service-box center">
                             <h3 class="service-header">
                                 Mise à jour de la garde-robe saisonnière
                             </h3>
                             <p class="service-text">Place holder - Serv-2</p>
+                            <div class="modal-serv2 hidden">
+                                <button class="btn-close-modal-serv2">
+                                    &times;
+                                </button>
+                                <p class="servce-text">
+                                    MORE SERVICE 2 Lorem ipsum dolor sit, amet
+                                    consectetur adipisicing elit. Nostrum
+                                    aliquid, amet animi itaque magni sed,
+                                    consequatur mollitia eveniet quidem
+                                    possimus, aspernatur nemo perspiciatis
+                                    tempora. Dignissimos dicta cum saepe
+                                    delectus quam.
+                                </p>
+                            </div>
                             <div class="center-me">
-                                <btn class="btn-more">Détails</btn>
+                                <btn
+                                    class="btn-more-serv2"
+                                    onclick="hideButton(this); showText()"
+                                    >Détails</btn
+                                >
                             </div>
                         </div>
-                        <div class="service-box-last">
+                        <div class="service-box last">
                             <h3 class="service-header">
                                 Magasinage accompagné
                             </h3>
                             <p class="service-text">Place holder - Serv-3</p>
+                            <div class="modal-serv3 hidden">
+                                <button class="btn-close-modal-serv3">
+                                    &times
+                                </button>
+                                <p class="service-text">
+                                    MORE ON SERV 3 Lorem ipsum, dolor sit amet
+                                    consectetur adipisicing elit. Quis iure
+                                    distinctio quisquam repudiandae quod ullam
+                                    saepe, doloremque autem at excepturi cum
+                                    pariatur quidem eum modi sit iste aspernatur
+                                    sequi nam.
+                                </p>
+                            </div>
                             <div class="center-me">
-                                <btn class="btn-more">Détails</btn>
+                                <btn class="btn-more-serv3">Détails</btn>
                             </div>
                         </div>
                     </div>
@@ -340,24 +402,14 @@
             </section>
         </main>
         <footer>
-            <div class="utility-container">
+            <div class="container">
                 <div class="grid-footer-container">
-                    <div class="footer-left-side">
-                        <p>contact</p>
-                        <p>placeholder</p>
+                    <div class="footer-col1">
+                        <p class="footer-info">contact</p>
+                        <p class="footer-info">placeholder</p>
                     </div>
-                    <div class="footer-right-side">
-                        <p>google map</p>
-                        <iframe
-                            class="google"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d685049.9760708365!2d-70.92355283987284!3d46.34183586364632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb9beae26baaa57%3A0x433b4df6d086152e!2sNotre-Dame-des-Pins%2C%20QC!5e0!3m2!1sen!2sca!4v1702772046017!5m2!1sen!2sca"
-                            width="400"
-                            height="300"
-                            style="border: 0"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                        ></iframe>
+                    <div class="footer-col2">
+                        <p class="footer-info">Placeholder</p>
                     </div>
                 </div>
             </div>

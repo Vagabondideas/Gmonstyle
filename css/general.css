@@ -14,18 +14,22 @@ body {
 }
 
 /* Colors
-#401c93ff
-background: #dfd0fbff
-
-#d7118aff
-background
-back: #fffffdff */
+light  background (same as previous): #dfd0fbff
+alt light background: #f3f8ff
+accent: #49108b
+accent:#d800a6
+footer: #27005d
+alt dark background: #25076bff
+previous version main: #401c93ff
+ */
 
 .container {
     margin: 0 auto;
-    /* display: flex;
-    justify-content: center; */
     max-width: 1200px;
+}
+
+.hidden {
+    display: none;
 }
 
 h1 {
@@ -54,7 +58,6 @@ p {
 
 .sub-header {
     font-size: 2.5rem;
-    color: red;
 }
 
 .center-me {
