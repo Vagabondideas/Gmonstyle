@@ -28,7 +28,10 @@ previous version main: #401c93ff
     max-width: 1200px;
 }
 
-.hidden {
+.hidden,
+.hidden-1,
+.hidden-2,
+.hidden-3 {
     display: none;
 }
 

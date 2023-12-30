@@ -19,62 +19,74 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     })
 );
 
-// *********  MORE ABOUT  ***********
-
-const moreAboutMe = document.querySelector(".modal-about-me");
-const moreServ1 = document.querySelector(".modal-serv1");
-const moreServ2 = document.querySelector(".modal-serv2");
-const moreServ3 = document.querySelector(".modal-serv3");
-
+// *********  MORE ABOUT ME  ***********
 const btnOpenMoreAboutMe = document.querySelector(".btn-more-about-me");
-const btnOpenMoreServ1 = document.querySelector(".btn-more-serv1");
-const btnOpenMoreServ2 = document.querySelector(".btn-more-serv2");
-const btnOpenMoreServ3 = document.querySelector(".btn-more-serv3");
-
+const modalAboutMe = document.querySelector(".modal-about-me");
 const btnCloseMoreAboutMe = document.querySelector(".btn-close-modal-about-me");
-const btnCloseServ1 = document.querySelector(".btn-close-modal-serv1");
-const btnCloseServ2 = document.querySelector(".btn-close-modal-serv2");
-const btnCloseServ3 = document.querySelector(".btn-close-modal-serv3");
 
-function hideButton(x) {
-    x.style.display = "none";
+function openMore() {
+    modalAboutMe.classList.remove("hidden");
+}
+function hideBtnMore() {
+    btnOpenMoreAboutMe.style.display = "none";
+}
+function closeMore() {
+    modalAboutMe.classList.add("hidden");
+}
+function showMore() {
+    btnOpenMoreAboutMe.style.display = "block";
 }
 
-function showText() {
-    moreServ2.classList.remove("hidden");
+// *********** SERVICES DOM FUNCTIONS ************
+const btnOpenServ1 = document.querySelector(".open-modal-1");
+const modal1 = document.querySelector(".modal-1");
+const btnOpenServ2 = document.querySelector(".open-modal-2");
+const modal2 = document.querySelector(".modal-2");
+const btnOpenServ3 = document.querySelector(".open-modal-3");
+const modal3 = document.querySelector(".modal-3");
+const btnCloseMod1 = document.querySelector(".close-modal-1");
+const btnCloseMod2 = document.querySelector(".close-modal-2");
+const btnCloseMod3 = document.querySelector(".close-modal-3");
+
+// *** OPEN MODAL and Hide Button More *******
+function openServ1() {
+    modal1.classList.remove("hidden-1");
+}
+function openServ2() {
+    modal2.classList.remove("hidden-2");
+}
+function openServ3() {
+    modal3.classList.remove("hidden-3");
 }
 
-// *********** OPEN FUNCTIONS ************
+function hideBtn1() {
+    btnOpenServ1.style.display = "none";
+}
+function hideBtn2() {
+    btnOpenServ2.style.display = "none";
+}
+function hideBtn3() {
+    btnOpenServ3.style.display = "none";
+}
 
-btnOpenMoreAboutMe.addEventListener("click", function () {
-    console.log("cliked");
-    moreAboutMe.classList.remove("hidden");
-});
+// *** CLOSE MODAL and Show (re-instate) Button More ***
 
-btnOpenMoreServ1.addEventListener("click", function () {
-    moreServ1.classList.remove("hidden");
-});
-// btnOpenMoreServ2.addEventListener("click", function () {
-//     moreServ2.classList.remove("hidden");
-// });
+function closeMod1() {
+    modal1.classList.add("hidden-1");
+}
+function closeMod2() {
+    modal2.classList.add("hidden-2");
+}
+function closeMod3() {
+    modal3.classList.add("hidden-3");
+}
 
-btnOpenMoreServ3.addEventListener("click", function () {
-    moreServ3.classList.remove("hidden");
-});
-
-// ***********  CLOSING FUNCTIONS ****************
-
-btnCloseMoreAboutMe.addEventListener("click", function () {
-    moreAboutMe.classList.add("hidden");
-});
-
-btnCloseServ1.addEventListener("click", function () {
-    moreServ1.classList.add("hidden");
-});
-btnCloseServ2.addEventListener("click", function () {
-    moreServ2.classList.add("hidden");
-    btnOpenMoreServ2.style.display = "block";
-});
-btnCloseServ3.addEventListener("click", function () {
-    moreServ3.classList.add("hidden");
-});
+function showBtn1() {
+    btnOpenServ1.style.display = "block";
+}
+function showBtn2() {
+    btnOpenServ2.style.display = "block";
+}
+function showBtn3() {
+    btnOpenServ3.style.display = "block";
+}

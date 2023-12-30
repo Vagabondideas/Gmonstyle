@@ -104,10 +104,15 @@
                                 src="images/about-798x1200.png"
                             />
 
-                            <btn class="btn-more-about-me">En savoir plus</btn>
+                            <button
+                                class="btn-more-about-me"
+                                onclick="openMore(); hideBtnMore()"
+                            >
+                                Voir Plus
+                            </button>
                         </div>
                         <div class="about-text-box">
-                            <p class="about-text intro">
+                            <p class="text about-me">
                                 Passionnée par l’univers de la mode et des
                                 accessoires, dotée d'une formation en tant
                                 qu'hôtesse d'accueil et ayant participé à des
@@ -119,7 +124,8 @@
                                 "Les Effrontés" à Montréal.
                             </p>
 
-                            <p class="about-text more">
+                            <p class="text more">
+                                <!-- ** class more devient hide @media *** -->
                                 Ensemble nous allons mettre en valeur vos atouts
                                 et revisiter votre beauté en harmonisant les
                                 couleurs et en jouant avec les accessoires
@@ -128,10 +134,16 @@
                                 respectant scrupuleusement votre budget.
                             </p>
                             <div class="modal-about-me hidden">
-                                <button class="btn-close-modal-about-me">
-                                    &times;
-                                </button>
-                                <p class="about-text">
+                                <div class="center-me">
+                                    <button
+                                        class="btn-close-modal-about-me"
+                                        onclick="closeMore(); showMore()"
+                                    >
+                                        Voir Moins
+                                    </button>
+                                </div>
+
+                                <p class="more-text about-me">
                                     Ensemble nous allons mettre en valeur vos
                                     atouts et revisiter votre beauté en
                                     harmonisant les couleurs et en jouant avec
@@ -146,7 +158,7 @@
                 </div>
             </section>
 
-            <!-- *******************************************************
+            <!-- ****************************************************
                           SERVICES
           **************************************************** -->
             <section class="services-section">
@@ -154,93 +166,156 @@
                     <div class="sub-header-box">
                         <h2 class="sub-header">Mes services:</h2>
                     </div>
-                    <div class="services-img-box">
-                        <img
-                            class="penderie-img"
-                            rel="femme qui fait choix de vetements dans son garde-robe"
-                            src="images/penderie-359x239.png"
-                        />
-                    </div>
+
                     <div class="grid-services-container">
-                        <div class="service-box first">
+                        <div class="serv1-box">
                             <h3 class="service-header">
                                 Optimiser votre silhouette
                             </h3>
-                            <p class="service-text">
-                                Place holder - Serv-1 - Lorem ipsum dolor sit
-                                amet, consectetur adipisicing elit. Ex nam
-                                placeat quasi ea fuga nostrum! Dolorum
-                                architecto cumque, ad quam doloremque, dicta
-                                fugit, exercitationem at sapiente repudiandae
-                                deleniti ducimus maiores!
-                            </p>
 
-                            <div class="modal-serv1 hidden">
-                                <button class="btn-close-modal-serv1">
-                                    &times;
+                            <div class="serv1-img-box">
+                                <img
+                                    class="penderie-img"
+                                    rel="femme qui fait choix de vetements dans son garde-robe"
+                                    src="images/penderie-359x239.png"
+                                />
+                            </div>
+
+                            <p class="text">
+                                Teaser - Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Obcaecati quam beatae
+                                molestiae iste! Culpa tenetur placeat amet
+                                libero accusantium natus voluptatum nisi ab
+                                suscipit eligendi! Officia vel eligendi ducimus
+                                nemo?
+                            </p>
+                            <div class="center-me">
+                                <button
+                                    class="open-modal-1 btn-open-modal"
+                                    onclick="openServ1(); hideBtn1()"
+                                >
+                                    Voir Plus
                                 </button>
-                                <p class="service-text more-serv1">
-                                    Place holder - Serv-1 - KNOW MORE - Lorem
-                                    ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Ex nam placeat quasi ea
-                                    fuga nostrum! Dolorum architecto cumque, ad
-                                    quam doloremque, dicta fugit, exercitationem
-                                    at sapiente repudiandae deleniti ducimus
-                                    maiores!
+                            </div>
+
+                            <div class="modal-1 hidden-1 modal">
+                                <div class="center-me">
+                                    <button
+                                        class="close-modal-1 btn-close-modal"
+                                        onclick="closeMod1(); showBtn1()"
+                                    >
+                                        Voir Moins
+                                    </button>
+                                </div>
+
+                                <p class="text-more">
+                                    EXTRA - Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Nihil repellat
+                                    rerum fugit excepturi magnam placeat
+                                    pariatur recusandae ratione, eveniet, id
+                                    magni dolores amet laudantium mollitia
+                                    reprehenderit voluptatibus earum voluptate
+                                    dolore.
                                 </p>
                             </div>
-
-                            <div class="center-me">
-                                <btn class="btn-more-serv1">Détails</btn>
-                            </div>
                         </div>
-                        <div class="service-box center">
+
+                        <div class="serv2-box">
                             <h3 class="service-header">
                                 Mise à jour de la garde-robe saisonnière
                             </h3>
-                            <p class="service-text">Place holder - Serv-2</p>
-                            <div class="modal-serv2 hidden">
-                                <button class="btn-close-modal-serv2">
-                                    &times;
+                            <div class="serv2-img-box">
+                                <img
+                                    class="penderie-img"
+                                    rel="femme qui fait choix de vetements dans son garde-robe"
+                                    src="images/penderie-359x239.png"
+                                />
+                            </div>
+
+                            <p class="text">
+                                I am a paragraph - PLACEHOLDER - about this
+                                service and bla bla bla for more
+                            </p>
+
+                            <div class="center-me">
+                                <button
+                                    class="open-modal-2 btn-open-modal"
+                                    onclick="openServ2(); hideBtn2()"
+                                >
+                                    Voir Plus
                                 </button>
-                                <p class="servce-text">
-                                    MORE SERVICE 2 Lorem ipsum dolor sit, amet
-                                    consectetur adipisicing elit. Nostrum
-                                    aliquid, amet animi itaque magni sed,
-                                    consequatur mollitia eveniet quidem
-                                    possimus, aspernatur nemo perspiciatis
-                                    tempora. Dignissimos dicta cum saepe
-                                    delectus quam.
+                            </div>
+
+                            <div class="modal-2 hidden-2 modal">
+                                <div class="center-me">
+                                    <button
+                                        class="close-modal-2 btn-close-modal"
+                                        onclick="closeMod2(); showBtn2()"
+                                    >
+                                        Voir Moins
+                                    </button>
+                                </div>
+
+                                <p class="text-more">
+                                    EXTRA - Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Nihil repellat
+                                    rerum fugit excepturi magnam placeat
+                                    pariatur recusandae ratione, eveniet, id
+                                    magni dolores amet laudantium mollitia
+                                    reprehenderit voluptatibus earum voluptate
+                                    dolore.
                                 </p>
                             </div>
-                            <div class="center-me">
-                                <btn
-                                    class="btn-more-serv2"
-                                    onclick="hideButton(this); showText()"
-                                    >Détails</btn
-                                >
-                            </div>
                         </div>
-                        <div class="service-box last">
+
+                        <div class="serv3-box">
                             <h3 class="service-header">
                                 Magasinage accompagné
                             </h3>
-                            <p class="service-text">Place holder - Serv-3</p>
-                            <div class="modal-serv3 hidden">
-                                <button class="btn-close-modal-serv3">
-                                    &times
-                                </button>
-                                <p class="service-text">
-                                    MORE ON SERV 3 Lorem ipsum, dolor sit amet
-                                    consectetur adipisicing elit. Quis iure
-                                    distinctio quisquam repudiandae quod ullam
-                                    saepe, doloremque autem at excepturi cum
-                                    pariatur quidem eum modi sit iste aspernatur
-                                    sequi nam.
-                                </p>
+                            <div class="serv3-img-box">
+                                <img
+                                    class="penderie-img"
+                                    rel="femme qui fait choix de vetements dans son garde-robe"
+                                    src="images/penderie-359x239.png"
+                                />
                             </div>
+
+                            <p class="text">
+                                I am a PLACEHOLDER describing the service, if
+                                you want to know more...
+                            </p>
+                            <p class="text">
+                                I am a SECOND paragraph here just for fun.
+                            </p>
+
                             <div class="center-me">
-                                <btn class="btn-more-serv3">Détails</btn>
+                                <button
+                                    class="open-modal-3 btn-open-modal"
+                                    onclick="openServ3(); hideBtn3()"
+                                >
+                                    Voir Plus
+                                </button>
+                            </div>
+
+                            <div class="modal-3 hidden-3 modal">
+                                <div class="center-me">
+                                    <button
+                                        class="close-modal-3 btn-close-modal"
+                                        onclick="closeMod3(); showBtn3()"
+                                    >
+                                        Voir Moins
+                                    </button>
+                                </div>
+
+                                <p class="text-more">
+                                    EXTRA - Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Nihil repellat
+                                    rerum fugit excepturi magnam placeat
+                                    pariatur recusandae ratione, eveniet, id
+                                    magni dolores amet laudantium mollitia
+                                    reprehenderit voluptatibus earum voluptate
+                                    dolore.
+                                </p>
                             </div>
                         </div>
                     </div>
