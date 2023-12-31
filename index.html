@@ -50,12 +50,12 @@
         </header>
 
         <main>
-            <section class="section-hero">
+            <section class="section-hero section-padding">
                 <div class="container">
                     <div class="sub-header-box">
                         <h2 class="sub-header">Affichez votre personnalité</h2>
                     </div>
-                    <div class="grid-hero-container">
+                    <div class="grid-hero-container grid-padding">
                         <div class="hero-text-box">
                             <!-- <h1 class="sub-header">Affichez votre personnalité</h1> -->
                             <h1 class="name">Marie-Josée Gagné</h1>
@@ -69,7 +69,7 @@
                                 reflètent votre personnalité.
                             </p>
 
-                            <a class="btn-contact-link" href="#contact-section"
+                            <a class="btn-contact-link" href="#"
                                 >Demandez un conseil</a
                             >
                         </div>
@@ -87,16 +87,13 @@
                 </div>
             </section>
 
-            <!-- *******************************************************
-                          ABOUT
-        Implement btn know more at media 520px (mobile phone)
-        **************************************************** -->
-            <section class="about-section">
+            <section class="about-section section-padding">
+                <!-- *** btn Voir Plus dependent on class more @608px *** -->
                 <div class="container">
                     <div class="sub-header-box">
                         <h2 class="sub-header">À propos de moi:</h2>
                     </div>
-                    <div class="grid-about-container">
+                    <div class="grid-about-container grid-padding">
                         <div class="about-img-box">
                             <img
                                 class="about-img"
@@ -112,7 +109,7 @@
                             </button>
                         </div>
                         <div class="about-text-box">
-                            <p class="text about-me">
+                            <p class="text">
                                 Passionnée par l’univers de la mode et des
                                 accessoires, dotée d'une formation en tant
                                 qu'hôtesse d'accueil et ayant participé à des
@@ -136,14 +133,14 @@
                             <div class="modal-about-me hidden">
                                 <div class="center-me">
                                     <button
-                                        class="btn-close-modal-about-me"
+                                        class="btn-close-modal-about-me btn-close-modal"
                                         onclick="closeMore(); showMore()"
                                     >
                                         Voir Moins
                                     </button>
                                 </div>
 
-                                <p class="more-text about-me">
+                                <p class="text-more text-more-ml">
                                     Ensemble nous allons mettre en valeur vos
                                     atouts et revisiter votre beauté en
                                     harmonisant les couleurs et en jouant avec
@@ -158,26 +155,23 @@
                 </div>
             </section>
 
-            <!-- ****************************************************
-                          SERVICES
-          **************************************************** -->
-            <section class="services-section">
+            <section class="services-section section-padding">
                 <div class="container">
                     <div class="sub-header-box">
                         <h2 class="sub-header">Mes services:</h2>
                     </div>
 
-                    <div class="grid-services-container">
+                    <div class="grid-services-container grid-padding">
                         <div class="serv1-box">
                             <h3 class="service-header">
-                                Optimiser votre silhouette
+                                Comprendre sa morphologie
                             </h3>
 
                             <div class="serv1-img-box">
                                 <img
-                                    class="penderie-img"
-                                    rel="femme qui fait choix de vetements dans son garde-robe"
-                                    src="images/penderie-359x239.png"
+                                    class="service-img"
+                                    rel="femme qui prend son tour de taille"
+                                    src="images/serv1-silhouette-1280x960.png"
                                 />
                             </div>
 
@@ -208,7 +202,7 @@
                                     </button>
                                 </div>
 
-                                <p class="text-more">
+                                <p class="text-more text-more-ml">
                                     EXTRA - Lorem ipsum dolor sit amet
                                     consectetur adipisicing elit. Nihil repellat
                                     rerum fugit excepturi magnam placeat
@@ -226,9 +220,9 @@
                             </h3>
                             <div class="serv2-img-box">
                                 <img
-                                    class="penderie-img"
+                                    class="service-img"
                                     rel="femme qui fait choix de vetements dans son garde-robe"
-                                    src="images/penderie-359x239.png"
+                                    src="images/serv2-panderie-1280x853.png"
                                 />
                             </div>
 
@@ -256,7 +250,7 @@
                                     </button>
                                 </div>
 
-                                <p class="text-more">
+                                <p class="text-more text-more-ml">
                                     EXTRA - Lorem ipsum dolor sit amet
                                     consectetur adipisicing elit. Nihil repellat
                                     rerum fugit excepturi magnam placeat
@@ -274,9 +268,9 @@
                             </h3>
                             <div class="serv3-img-box">
                                 <img
-                                    class="penderie-img"
-                                    rel="femme qui fait choix de vetements dans son garde-robe"
-                                    src="images/penderie-359x239.png"
+                                    class="service-img"
+                                    rel="deux femmes devant un centre commerciale avec des sacs de magasinage"
+                                    src="images/serv3-magasinage-1280x853.png"
                                 />
                             </div>
 
@@ -307,7 +301,7 @@
                                     </button>
                                 </div>
 
-                                <p class="text-more">
+                                <p class="text-more text-more-ml">
                                     EXTRA - Lorem ipsum dolor sit amet
                                     consectetur adipisicing elit. Nihil repellat
                                     rerum fugit excepturi magnam placeat
@@ -322,22 +316,21 @@
                 </div>
             </section>
 
-            <section id="contact-section">
+            <section class="contact-section section-padding">
                 <div class="container">
                     <div class="sub-header-box">
                         <h2 class="sub-header">Pour me rejoindre:</h2>
                     </div>
 
-                    <div class="grid-contact-container">
+                    <div class="grid-contact-container grid-padding">
                         <div class="contact-img-box">
                             <img
                                 class="contact-img"
-                                alt="photo de marie-josée gagné"
+                                alt="personne tenant un telephone a la main"
                                 src="images/contactv2-978x1100.png"
                             />
                         </div>
                         <div class="contact-text-box">
-                            <!-- <h1 class="name">Marie-Josée Gagné</h1> -->
                             <h2 class="sub-header contact-name">
                                 Marie-Josée Gagné
                             </h2>
@@ -466,7 +459,7 @@
                                 ></textarea>
                             </div>
 
-                            <div class="btn-send-container">
+                            <div class="center-me">
                                 <button class="btn-send-form">Envoyez</button>
                             </div>
                         </form>
@@ -476,15 +469,15 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="footer-section section-padding">
             <div class="container">
-                <div class="grid-footer-container">
+                <div class="grid-footer-container grid-padding">
                     <div class="footer-col1">
-                        <p class="footer-info">contact</p>
-                        <p class="footer-info">placeholder</p>
+                        <p class="text footer-text">contact</p>
+                        <p class="text footer-text">placeholder</p>
                     </div>
                     <div class="footer-col2">
-                        <p class="footer-info">Placeholder</p>
+                        <p class="text footer-text">Placeholder</p>
                     </div>
                 </div>
             </div>

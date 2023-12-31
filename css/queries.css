@@ -141,24 +141,18 @@
     }
 }
 
-/* ***** BELOW 608 - ADJUST ABOUT ME **** */
+/* ***** BELOW 608 - ADJUST ABOUT ME and SERVICES **** */
 @media (max-width: 38em) {
     .more {
         display: none;
     }
-    .about-img {
-        padding-bottom: 1.5rem;
-    }
-    .btn-more-about-me {
-        display: block;
-        font-size: 0.75rem;
-    }
-}
 
-/* TARGET BELOW 528px - mobile phone */
-@media (max-width: 33em) {
     .nav-container {
         padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .section-padding {
+        padding: 1.5rem 1rem;
     }
 
     .sub-header-box {
@@ -175,9 +169,38 @@
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
+    .text {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .text-more-ml {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .about-img {
+        padding-bottom: 1.5rem;
+    }
+    .btn-more-about-me {
+        /* *** hidden by default *** */
+        display: block;
+        font-size: 0.75rem;
+        background-color: #49108b;
+        color: #dfd0fbff;
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 9px;
+        cursor: pointer;
+    }
+
     .grid-about-container {
         padding: 0rem 1rem 0rem 1rem;
         grid-template-columns: 1fr 2fr;
+        align-items: flex-start;
         gap: 1rem;
     }
 
@@ -187,6 +210,14 @@
         gap: 2rem;
     }
 
+    .btn-open-modal,
+    .btn-close-modal {
+        font-size: 0.75rem;
+    }
+}
+
+/* TARGET BELOW 528px - mobile phone */
+@media (max-width: 33em) {
     .grid-contact-container {
         padding: 0rem 1rem;
         gap: 1rem;
@@ -214,15 +245,9 @@
         padding-bottom: 1.5rem;
     }
 
-    .text {
-        font-size: 1rem;
-        line-height: 1.5rem;
+    /* .service-text {
         padding-bottom: 1rem;
-    }
-
-    .service-text {
-        padding-bottom: 1rem;
-    }
+    } */
 
     .hero-img {
         max-width: 50%;
@@ -230,13 +255,13 @@
     .btn-contact-link {
         justify-self: center;
         font-size: 1rem;
-        background-color: #401c93ff;
-        color: white;
+        /* background-color: #49108b;
+        color: #dfd0fbff;
         text-decoration: none;
-        display: inline-block;
+        display: inline-block; */
         padding: 8px 16px;
-        border-radius: 9px;
-        cursor: pointer;
+        /* border-radius: 9px; */
+        /* cursor: pointer; */
     }
 
     .title-contact {
