@@ -23,18 +23,6 @@ alt dark background: #25076bff
 previous version main: #401c93ff
  */
 
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.hidden,
-.hidden-1,
-.hidden-2,
-.hidden-3 {
-    display: none;
-}
-
 h1 {
     font-family: "Belleza", sans-serif;
     font-size: 3.5rem;
@@ -54,10 +42,27 @@ p {
     font-size: 1.5rem;
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.section-padding {
+    padding: 3.5rem 2rem;
+}
+
+.hidden,
+.hidden-1,
+.hidden-2,
+.hidden-3 {
+    display: none;
+}
+
 .sub-header-box {
     display: flex;
     justify-content: flex-start;
-    padding: 0rem 0rem 2rem 2rem;
+    /* padding: 0rem 0rem 2rem 2rem; */
+    padding-bottom: 2rem;
 }
 
 .sub-header {
