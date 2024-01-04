@@ -75,14 +75,12 @@
                             >
                         </div>
 
-                        <div class="heor-img-box">
-                            <!-- <div class="center-me"> -->
+                        <div class="hero-img-box">
                             <img
                                 class="hero-img"
                                 alt="marie-josée gagné avec garde-robe"
                                 src="images/hero-650x971.png"
                             />
-                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -94,54 +92,40 @@
                     <div class="sub-header-box">
                         <h2 class="sub-header">À propos de moi:</h2>
                     </div>
-                    <div class="grid-about-container grid-padding">
-                        <div class="about-img-box">
+                    <div class="flex-about-container">
+                        <div class="wrapper about-img-box">
                             <img
                                 class="about-img"
                                 rel="photo de marie-josée gagné"
                                 src="images/about-798x1200.png"
                             />
 
-                            <button
-                                class="btn-more-about-me"
-                                onclick="openMore(); hideBtnMore()"
-                            >
-                                Voir Plus
-                            </button>
-                        </div>
-                        <div class="about-text-box">
-                            <p class="text">
-                                Passionnée par l’univers de la mode et des
-                                accessoires, dotée d'une formation en tant
-                                qu'hôtesse d'accueil et ayant participé à des
-                                défilés de mode pour des boutiques de Québec, il
-                                était naturel pour moi d'envisager une seconde
-                                carrière dans le domaine du stylisme
-                                personnalisé. C'est ainsi que j'ai décidé de
-                                suivre une formation auprès de l'école renommée
-                                "Les Effrontés" à Montréal.
-                            </p>
+                            <!-- </div> -->
+                            <div class="about-text-box">
+                                <p class="text">
+                                    Passionnée par l’univers de la mode et des
+                                    accessoires, dotée d'une formation en tant
+                                    qu'hôtesse d'accueil et ayant participé à
+                                    des défilés de mode pour des boutiques de
+                                    Québec, il était naturel pour moi
+                                    d'envisager une seconde carrière dans le
+                                    domaine du stylisme personnalisé. C'est
+                                    ainsi que j'ai décidé de suivre une
+                                    formation auprès de l'école renommée "Les
+                                    Effrontés" à Montréal.
+                                </p>
 
-                            <p class="text more">
-                                <!-- ** class more devient hide @media *** -->
-                                Ensemble nous allons mettre en valeur vos atouts
-                                et revisiter votre beauté en harmonisant les
-                                couleurs et en jouant avec les accessoires
-                                indispensables. Nous allons partir à la
-                                découverte de votre style personnel tout en
-                                respectant scrupuleusement votre budget.
-                            </p>
-                            <div class="modal-about-me hidden">
-                                <div class="center-me">
+                                <div class="btn-show-at-608">
                                     <button
-                                        class="btn-close-modal-about-me btn-close-modal"
-                                        onclick="closeMore(); showMore()"
+                                        class="btn-more-about-me"
+                                        onclick="openMore(); hideBtnMore()"
                                     >
-                                        Voir Moins
+                                        Voir Plus
                                     </button>
                                 </div>
 
-                                <p class="text-more text-more-ml">
+                                <p class="text hide-at-608">
+                                    <!-- ** class more devient hide @media *** -->
                                     Ensemble nous allons mettre en valeur vos
                                     atouts et revisiter votre beauté en
                                     harmonisant les couleurs et en jouant avec
@@ -150,6 +134,34 @@
                                     personnel tout en respectant scrupuleusement
                                     votre budget.
                                 </p>
+                                <div class="modal-about-me hidden">
+                                    <!-- <div class="center-me">
+                                        <button
+                                            class="btn-close-modal-about-me btn-close-modal"
+                                            onclick="closeMore(); showMore()"
+                                        >
+                                            Voir Moins
+                                        </button>
+                                    </div> -->
+
+                                    <p class="text-more text-more-ml">
+                                        Ensemble nous allons mettre en valeur
+                                        vos atouts et revisiter votre beauté en
+                                        harmonisant les couleurs et en jouant
+                                        avec les accessoires indispensables.
+                                        Nous allons partir à la découverte de
+                                        votre style personnel tout en respectant
+                                        scrupuleusement votre budget.
+                                    </p>
+                                    <div class="center-me">
+                                        <button
+                                            class="btn-close-modal-about-me btn-close-modal"
+                                            onclick="closeMore(); showMore()"
+                                        >
+                                            Voir Moins
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

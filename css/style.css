@@ -73,10 +73,6 @@
     align-items: center;
 }
 
-/* .grid-padding {
-    padding: 0rem 2rem;
-} */
-
 .name {
     font-size: 3.5rem;
     /* padding-bottom: 2rem; */
@@ -118,21 +114,26 @@
     background-color: #f3f8ff;
     /* padding: 3.5rem 0rem; */
 }
-.grid-about-container {
-    display: grid;
-    /* padding: 0rem 2rem 0rem 2rem; */
-    grid-template-columns: 1fr 2fr;
-    gap: 3.5rem;
+.flex-about-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 3.5rem;
 }
 
-.about-img-box {
-    align-self: start;
+.wrapper {
+    margin: auto;
+    width: 100%;
 }
 
 .about-img {
-    max-width: 100%;
-    align-self: start;
+    max-width: 33%;
+    padding-right: 3.5rem;
+    float: left;
+}
+
+.about-text-box {
+    position: relative;
 }
 
 .text {
@@ -141,15 +142,28 @@
     padding-bottom: 1rem;
 }
 
-.btn-more-about-me {
+.btn-show-at-608 {
     display: none;
+    position: absolute;
+    right: 33%;
+}
+
+.btn-more-about-me {
+    /* *** hidden by default *** */
+    font-size: 0.75rem;
+    background-color: #49108b;
+    color: #dfd0fbff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 9px;
+    cursor: pointer;
 }
 
 .modal-about-me {
-    position: relative;
+    /* position: relative; */
     background-color: #f3f8ff;
     font-size: 1rem;
-    /* grid-column: 1/3; */
 }
 
 /* ** SERVICES SECTION ** */
