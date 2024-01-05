@@ -170,19 +170,14 @@
 
 .services-section {
     background-color: #dfd0fbff;
-    padding: 3.5rem 0rem;
+    /* padding: 3.5rem 0rem; */
 }
 
-.serv1-img-box,
-.serv2-img-box,
-.serv3-img-box {
-    display: flex;
-    /* padding: 0rem 0rem 2rem 2rem; */
-    padding-bottom: 2rem;
-}
-
-.service-img {
-    max-width: 100%;
+.service-header {
+    /* ** Set min-height to keep aligned because of varying title lenght *** */
+    min-height: 6rem;
+    justify-self: center;
+    align-self: start;
 }
 
 .grid-services-container {
@@ -192,22 +187,45 @@
     gap: 2rem;
 }
 
-.service-header {
-    justify-self: center;
-    padding-bottom: 1rem;
+.serv1-img-box,
+.serv2-img-box,
+.serv3-img-box {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 1.5rem;
+}
+
+.service-img {
+    max-width: 100%;
+}
+
+.serv1-box {
+    padding-bottom: 1.5rem;
 }
 .text {
     font-size: 1.25rem;
     padding-bottom: 1rem;
 }
 
+.serv-separator {
+    display: none;
+}
+
+/* .serv-separator-rule {
+    display: none;
+}  */
+
+.fancy-line-top1 {
+    display: none;
+}
+
 .text-more {
     font-size: 1.25rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 .modal {
-    position: relative;
+    /* position: relative; */
     background-color: #dfd0fbff;
 }
 
@@ -228,8 +246,8 @@
 }
 
 .btn-close-modal {
-    /* ** INSTEAD OF ABSOLUTE POSITIONING just place the btn at the end of modal in html ** */
-    position: absolute;
+    /* ** Was relative to modal ** */
+    /* position: absolute; */
     bottom: 0;
     font-size: 1rem;
     background-color: #d800a6;

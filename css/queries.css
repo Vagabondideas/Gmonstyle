@@ -183,6 +183,10 @@
         padding-bottom: 1.5rem;
     }
 
+    .about-section {
+        padding-bottom: 3rem;
+    }
+
     .hide-at-608 {
         display: none;
     }
@@ -191,14 +195,25 @@
         display: block;
     }
 
-    /* .btn-more-about-me {
-        display: block;
-    } */
-
     .grid-hero-container {
-        /* padding: 0rem 1rem; */
         grid-template-columns: 3fr 1fr;
         gap: 1rem;
+    }
+
+    .grid-services-container {
+        /* padding: 0rem 1rem 1rem 1rem; */
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .service-header {
+        /* min-height: 3.1rem; */
+        min-height: 0rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .service-img {
+        max-width: 75%;
     }
 
     .text {
@@ -212,28 +227,34 @@
         line-height: 1.5rem;
     }
 
-    .about-section {
-        padding-bottom: 3rem;
-    }
-
-    /* .about-img {
-        padding-bottom: 0rem;
+    /* .serv1-box {
+        position: relative;
     } */
 
-    /* 
-    .grid-about-container {
-        padding: 0rem 1rem 0rem 1rem;
-        grid-template-columns: 1fr 2fr;
-        align-items: flex-start;
-        gap: 1rem;
-    }
-     */
+    /* .more-space {
+        padding-bottom: 1rem;
+    } */
 
-    .grid-services-container {
-        padding: 0rem 1rem 1rem 1rem;
-        grid-template-columns: 1fr;
-        gap: 2rem;
+    .serv-separator {
+        display: block;
+        padding-top: 1.5rem;
     }
+
+    .serv-separator-rule {
+        height: 0.75rem;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(to left, #49108b, #d800a6, #49108b);
+    }
+
+    /* .fancy-line-top1 {
+        display: block;
+        padding-top: 1rem;
+    }
+
+    .fancy-line-img1 {
+        max-width: 100%;
+    } */
 
     .btn-open-modal,
     .btn-close-modal {
@@ -241,8 +262,8 @@
     }
 }
 
-/* TARGET BELOW 400 down to 340 - mobile phone */
-@media (max-width: 33em) {
+/* TARGET BELOW 416 down to 340 - mobile phone */
+@media (max-width: 26em) {
     .name {
         font-size: 1.5rem;
     }
@@ -255,6 +276,14 @@
         padding-bottom: 1.5rem;
     }
 
+    .service-header {
+        font-size: 1.25rem;
+    }
+
+    .serv1-box {
+        padding-bottom: 1rem;
+    }
+
     .contact-phone-icon {
         stroke: purple;
         width: 16px;
@@ -264,22 +293,6 @@
         stroke: purple;
         width: 16px;
     }
-
-    /* .name {
-        font-size: 1.75rem;
-    }
-    .title {
-        font-size: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-    .mission {
-        font-size: 1rem;
-        padding-bottom: 1.5rem;
-    } */
-
-    /* .service-text {
-        padding-bottom: 1rem;
-    } */
 
     .grid-contact-container {
         padding: 0rem 1rem;

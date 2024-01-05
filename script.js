@@ -38,11 +38,11 @@ function showMore() {
 }
 
 // *********** SERVICES DOM FUNCTIONS ************
-const btnOpenServ1 = document.querySelector(".open-modal-1");
+const btnOpenServ1 = document.querySelector(".open-serv1");
 const modal1 = document.querySelector(".modal-1");
-const btnOpenServ2 = document.querySelector(".open-modal-2");
+const btnOpenServ2 = document.querySelector(".open-serv2");
 const modal2 = document.querySelector(".modal-2");
-const btnOpenServ3 = document.querySelector(".open-modal-3");
+const btnOpenServ3 = document.querySelector(".open-serv3");
 const modal3 = document.querySelector(".modal-3");
 const btnCloseMod1 = document.querySelector(".close-modal-1");
 const btnCloseMod2 = document.querySelector(".close-modal-2");
