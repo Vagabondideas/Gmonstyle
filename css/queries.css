@@ -55,9 +55,6 @@
         grid-template-columns: 1.5fr 1fr;
         gap: 1.5rem;
     }
-    /* .grid-about-container {
-        gap: 1rem;
-    } */
 
     .sub-header {
         font-size: 1.75rem;
@@ -96,9 +93,9 @@
     .contact-img {
         max-width: 100%;
     }
-    .contact-text-box {
+    /* .contact-text-box {
         padding-right: 1.5rem;
-    }
+    } */
     .contact-details {
         padding: 0.25rem;
         font-size: 1.25rem;
@@ -118,27 +115,6 @@
         cursor: pointer;
     }
 }
-
-/* *****  BELOW 700 - Ajust hero title (name) and Form **** */
-/* @media (max-width: 44em) {
-    .nav-logo-img {
-        width: 50%;
-    }
-    .nav-container {
-        padding: 1rem 1rem 1rem 2rem;
-    }
-
-    .name {
-        font-size: 2rem;
-    }
-
-    .grid-contact-container {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        gap: 1rem;
-        padding: 0rem 1rem;
-    }
-} */
 
 /* ***** BELOW 608 - Mid-MOBILE **** */
 @media (max-width: 38em) {
@@ -206,6 +182,14 @@
         gap: 1rem;
     }
 
+    .grid-contact-container {
+        grid-template-columns: 1fr 3fr;
+        gap: 1rem;
+    }
+    .contact-form-container {
+        grid-column: 1/3;
+    }
+
     .service-header {
         /* min-height: 3.1rem; */
         min-height: 0rem;
@@ -226,14 +210,6 @@
         font-size: 1rem;
         line-height: 1.5rem;
     }
-
-    /* .serv1-box {
-        position: relative;
-    } */
-
-    /* .more-space {
-        padding-bottom: 1rem;
-    } */
 
     .serv-separator {
         display: block;
@@ -276,13 +252,18 @@
         padding-bottom: 1.5rem;
     }
 
+    .btn-contact-link {
+        justify-self: center;
+        font-size: 1rem;
+    }
+
     .service-header {
         font-size: 1.25rem;
     }
 
-    .serv1-box {
+    /* .serv1-box {
         padding-bottom: 1rem;
-    }
+    } */
 
     .contact-phone-icon {
         stroke: purple;
@@ -292,27 +273,6 @@
     .contact-location-icon {
         stroke: purple;
         width: 16px;
-    }
-
-    .grid-contact-container {
-        padding: 0rem 1rem;
-        gap: 1rem;
-    }
-
-    /* .hero-img {
-        max-width: 50%;
-    } */
-
-    .btn-contact-link {
-        justify-self: center;
-        font-size: 1rem;
-        /* background-color: #49108b;
-        color: #dfd0fbff;
-        text-decoration: none;
-        display: inline-block; */
-        padding: 8px 16px;
-        /* border-radius: 9px; */
-        /* cursor: pointer; */
     }
 
     .title-contact {
@@ -325,9 +285,7 @@
     .email-link {
         font-size: 1rem;
     }
-    /* .contact-form-container {
-        padding-right: 1rem;
-    } */
+
     .form-control {
         font-size: 1rem;
     }
