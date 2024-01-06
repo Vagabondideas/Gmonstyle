@@ -25,24 +25,29 @@
         top: 64px;
         gap: 8px;
         background-color: #27005d;
-        padding: 8px 0px;
+        padding: 16px 0px;
         width: 100%;
         text-align: center;
         transition: 0.3s;
     }
-    /* .nav-items {
-        margin: 5px 0;
-    } */
+
+    .nav-items {
+        padding-bottom: 1rem;
+    }
+    .nav-items:last-child {
+        padding-bottom: 0;
+    }
 
     .nav-link {
         color: #dfd0fbff;
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
     .nav-link:hover {
         background-color: #d800a6;
         padding: 4px 8px;
         color: #dfd0fbff;
     }
+
     .nav-logo-img {
         width: 80%;
     }
@@ -80,12 +85,6 @@
         padding: 0 1.5rem 0rem 0rem;
     }
 
-    /* .about-text {
-        font-size: 1.25rem;
-        line-height: 1.5rem;
-        padding-bottom: 1rem;
-    } */
-
     .btn-contact-link {
         font-size: 1.25rem;
         background-color: #401c93ff;
@@ -98,16 +97,12 @@
     .contact-img {
         max-width: 100%;
     }
-    /* .contact-text-box {
-        padding-right: 1.5rem;
-    } */
+
     .contact-details {
         padding: 0.25rem;
         font-size: 1.25rem;
     }
-    /* .email-link {
-        font-size: 1.25rem;
-    } */
+
     .btn-send-form {
         font-size: 1.25rem;
         background-color: #401c93ff;
@@ -126,9 +121,8 @@
     .hamburger {
         padding-right: 1rem;
     }
-
-    /* .nav-container {
-        padding: 1rem 1rem 1rem 1rem;
+    /* .bar {
+        background-color: black;
     } */
 
     .nav-logo-img {
@@ -231,6 +225,9 @@
 
 /* TARGET BELOW 416 down to 340 - mobile phone */
 @media (max-width: 26em) {
+    .nav-link {
+        font-size: 0.75rem;
+    }
     .name {
         font-size: 1.5rem;
     }
@@ -258,7 +255,6 @@
 
     .contact-details {
         font-size: 1rem;
-        /* padding-bottom: 0.5rem; */
     }
 
     .contact-phone {
@@ -301,10 +297,6 @@
         padding-bottom: 0.5rem;
     }
 
-    /* .footer-serv-item {
-    padding-bottom: 0.25rem;
-} */
-
     .footer-serv-link {
         font-size: 0.75rem;
         color: white;
@@ -318,3 +310,11 @@
         color: white;
     }
 }
+
+/* @media (hover: hover) {
+    .nav-link:hover {
+        background-color: #d800a6;
+        padding: 4px 8px;
+        color: #dfd0fbff;
+    }
+} */

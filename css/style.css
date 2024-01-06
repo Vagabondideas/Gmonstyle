@@ -35,9 +35,14 @@
     text-transform: uppercase;
 }
 
-.nav-link:hover {
-    color: #dfd0fbff;
-    background: #49108b;
+.nav-link:hover,
+.footer-link:hover,
+.footer-serv-link:hover {
+    /* color: #dfd0fbff; */
+    /* background: #49108b; */
+
+    background-color: #d800a6;
+    color: #f5f5dc;
     padding: 4px 8px 4px 8px;
 }
 
@@ -54,6 +59,7 @@
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: black;
+    /* background-color: white; */
 }
 
 .section-hero {

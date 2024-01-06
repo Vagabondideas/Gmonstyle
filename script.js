@@ -7,7 +7,6 @@ const navMenu = document.querySelector(".nav-menu");
 // const btnSubmitMsg = document.querySelector(".btn-submit-msg");
 
 hamburger.addEventListener("click", () => {
-    console.log("clicked");
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 });
@@ -90,3 +89,5 @@ function showBtn2() {
 function showBtn3() {
     btnOpenServ3.style.display = "block";
 }
+
+// *** HOVER ON MOBILE ********
