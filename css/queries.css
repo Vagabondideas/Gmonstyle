@@ -71,15 +71,20 @@
         padding-bottom: 2rem;
     }
 
+    .text {
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+
     .about-img {
         padding: 0 1.5rem 0rem 0rem;
     }
 
-    .about-text {
+    /* .about-text {
         font-size: 1.25rem;
         line-height: 1.5rem;
         padding-bottom: 1rem;
-    }
+    } */
 
     .btn-contact-link {
         font-size: 1.25rem;
@@ -100,9 +105,9 @@
         padding: 0.25rem;
         font-size: 1.25rem;
     }
-    .email-link {
+    /* .email-link {
         font-size: 1.25rem;
-    }
+    } */
     .btn-send-form {
         font-size: 1.25rem;
         background-color: #401c93ff;
@@ -206,11 +211,6 @@
         padding-bottom: 0.5rem;
     }
 
-    .text-more-ml {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-
     .serv-separator {
         display: block;
         padding-top: 1.5rem;
@@ -222,15 +222,6 @@
         border-radius: 10px;
         background: linear-gradient(to left, #49108b, #d800a6, #49108b);
     }
-
-    /* .fancy-line-top1 {
-        display: block;
-        padding-top: 1rem;
-    }
-
-    .fancy-line-img1 {
-        max-width: 100%;
-    } */
 
     .btn-open-modal,
     .btn-close-modal {
@@ -261,29 +252,17 @@
         font-size: 1.25rem;
     }
 
-    /* .serv1-box {
-        padding-bottom: 1rem;
-    } */
-
-    .contact-phone-icon {
-        stroke: purple;
-        width: 16px;
-        height: 16px;
-    }
-    .contact-location-icon {
-        stroke: purple;
-        width: 16px;
-    }
-
     .title-contact {
         padding-bottom: 1.5rem;
     }
+
     .contact-details {
-        padding: 0.25rem;
         font-size: 1rem;
+        /* padding-bottom: 0.5rem; */
     }
-    .email-link {
-        font-size: 1rem;
+
+    .contact-phone {
+        padding-bottom: 0.75rem;
     }
 
     .form-control {
@@ -300,5 +279,42 @@
         border-radius: 9px;
         justify-self: center;
         cursor: pointer;
+    }
+
+    .grid-footer-container {
+        gap: 1rem;
+    }
+
+    .footer-name {
+        font-size: 1rem;
+        color: white;
+    }
+    .footer-title {
+        font-size: 0.75rem;
+        color: white;
+        padding-bottom: 1.5rem;
+    }
+
+    .footer-sub-header {
+        font-size: 1rem;
+        color: white;
+        padding-bottom: 0.5rem;
+    }
+
+    /* .footer-serv-item {
+    padding-bottom: 0.25rem;
+} */
+
+    .footer-serv-link {
+        font-size: 0.75rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    .copyright {
+        /* grid-column: 1/3;
+    justify-self: start; */
+        font-size: 0.4rem;
+        color: white;
     }
 }
