@@ -3,9 +3,6 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
-// const contactForm = document.querySelector(".contact-form");
-// const btnSubmitMsg = document.querySelector(".btn-submit-msg");
-
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
@@ -90,4 +87,18 @@ function showBtn3() {
     btnOpenServ3.style.display = "block";
 }
 
-// *** HOVER ON MOBILE ********
+// *** POST with GETFROM NOT ACCEPTING EVENT LISTENER ********
+
+// const form = document.querySelector(".contact-form-container");
+// const acknowledged = document.querySelector(".acknowledged");
+// const btnSubmit = document.querySelector(".btn-send-form");
+// const inputs = document.querySelectorAll("input");
+// const textarea = document.querySelector("textarea");
+
+// btnSubmit.addEventListener("click", (e) => {
+//     console.log("clicked");
+//     e.preventDefault();
+//     form.style.display = "none";
+//     acknowledged.style.display = "block";
+
+// });

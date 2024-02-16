@@ -116,6 +116,14 @@
     }
 }
 
+/**** 735 POUR ACKNOWLEDGE MSG **** */
+@media (max-width: 46em) {
+    .thank-you-text {
+        font-size: 1rem;
+        list-style: 1rem;
+    }
+}
+
 /* ***** BELOW 608 - Mid-MOBILE **** */
 @media (max-width: 38em) {
     .hamburger {
@@ -220,6 +228,13 @@
     .btn-open-modal,
     .btn-close-modal {
         font-size: 0.75rem;
+    }
+
+    .acknowledged {
+        margin-top: 25px;
+    }
+    .thank-you-text {
+        line-height: normal;
     }
 }
 

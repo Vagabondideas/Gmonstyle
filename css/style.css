@@ -308,14 +308,27 @@
     color: black;
 }
 
-.contact-form-container {
-    width: 100%;
-    place-items: center;
-    /* background-color: aqua; */
+.acknowledged {
+    display: none;
+    /* margin-top: 75px; */
+    border: solid;
+    border-style: solid;
+    border-color: black;
+    border-radius: 3px;
+    padding: 1rem;
+    text-align: center;
 }
 
-.thank-you-container {
-    display: none;
+.thank-you-text {
+    /* color: #d800a6; */
+    color: rgb(33, 91, 33);
+    line-height: 2.5rem;
+}
+
+.contact-form-container {
+    /* display: none; */
+    width: 100%;
+    place-items: center;
 }
 
 .form-group {
