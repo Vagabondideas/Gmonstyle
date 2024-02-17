@@ -170,13 +170,13 @@
         padding-bottom: 3rem;
     }
 
-    .hide-at-608 {
+    /* .hide-at-608 {
         display: none;
     }
 
     .btn-show-at-608 {
         display: block;
-    }
+    } */
 
     .grid-hero-container {
         grid-template-columns: 3fr 1fr;
@@ -229,13 +229,13 @@
     .btn-close-modal {
         font-size: 0.75rem;
     }
-
+    /* 
     .acknowledged {
         margin-top: 25px;
     }
     .thank-you-text {
         line-height: normal;
-    }
+    } */
 }
 
 /* TARGET BELOW 416 down to 340 - mobile phone */
