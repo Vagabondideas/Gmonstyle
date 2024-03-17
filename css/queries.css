@@ -208,6 +208,12 @@
     .btn-close-modal {
         font-size: 0.75rem;
     }
+
+    .temoignage-name {
+        font-weight: 800;
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+    }
 }
 
 /* TARGET BELOW 416 down to 340 - mobile phone */
@@ -246,6 +252,18 @@
         line-height: 1.5rem;
         padding-bottom: 0.5rem;
     }
+
+    .grid-temoignages-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    /* .temoignage-name {
+        font-weight: 800;
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+    } */
 
     .contact-details {
         font-size: 1rem;
