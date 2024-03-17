@@ -94,14 +94,6 @@
         padding: 8px 16px;
         border-radius: 9px;
     }
-    .contact-img {
-        max-width: 100%;
-    }
-
-    .contact-details {
-        padding: 0.25rem;
-        font-size: 1.25rem;
-    }
 
     .btn-send-form {
         font-size: 1.25rem;
@@ -116,8 +108,12 @@
     }
 }
 
-/**** 735 POUR ACKNOWLEDGE MSG **** */
+/**** 735 POUR CONTACT **** */
 @media (max-width: 46em) {
+    .contact-details {
+        padding: 0.25rem;
+        font-size: 1rem;
+    }
     .thank-you-text {
         font-size: 1rem;
         list-style: 1rem;
@@ -170,14 +166,6 @@
         padding-bottom: 3rem;
     }
 
-    /* .hide-at-608 {
-        display: none;
-    }
-
-    .btn-show-at-608 {
-        display: block;
-    } */
-
     .grid-hero-container {
         grid-template-columns: 3fr 1fr;
         gap: 1rem;
@@ -189,16 +177,7 @@
         gap: 1rem;
     }
 
-    .grid-contact-container {
-        grid-template-columns: 1fr 3fr;
-        gap: 1rem;
-    }
-    .contact-form-container {
-        grid-column: 1/3;
-    }
-
     .service-header {
-        /* min-height: 3.1rem; */
         min-height: 0rem;
         padding-bottom: 1.5rem;
     }
@@ -229,13 +208,6 @@
     .btn-close-modal {
         font-size: 0.75rem;
     }
-    /* 
-    .acknowledged {
-        margin-top: 25px;
-    }
-    .thank-you-text {
-        line-height: normal;
-    } */
 }
 
 /* TARGET BELOW 416 down to 340 - mobile phone */
@@ -243,6 +215,7 @@
     .nav-link {
         font-size: 0.75rem;
     }
+
     .name {
         font-size: 1.5rem;
     }
@@ -268,18 +241,35 @@
         padding-bottom: 1.5rem;
     }
 
+    .text {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+
     .contact-details {
         font-size: 1rem;
     }
 
-    .contact-phone {
-        padding-bottom: 0.75rem;
+    .contact-name {
+        font-size: 1.5rem;
     }
 
     .form-control {
         font-size: 1rem;
     }
 
+    .flex-contact-container {
+        display: block;
+    }
+
+    .contact-location {
+        padding-bottom: 2rem;
+    }
+
+    .contact-form-container {
+        width: 100%;
+    }
     .btn-send-form {
         font-size: 1.25rem;
         background-color: #401c93ff;
@@ -300,6 +290,7 @@
         font-size: 1rem;
         color: white;
     }
+
     .footer-title {
         font-size: 0.75rem;
         color: white;
@@ -325,11 +316,3 @@
         color: white;
     }
 }
-
-/* @media (hover: hover) {
-    .nav-link:hover {
-        background-color: #d800a6;
-        padding: 4px 8px;
-        color: #dfd0fbff;
-    }
-} */
