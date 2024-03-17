@@ -78,12 +78,6 @@
     display: flex;
 }
 
-.hero-img {
-    max-width: 33%;
-    padding-left: 3.5rem;
-    float: right;
-}
-
 .name {
     font-size: 3.5rem;
 }
@@ -144,6 +138,12 @@
     max-width: 33%;
     padding-right: 3.5rem;
     float: left;
+}
+
+.hero-img {
+    max-width: 33%;
+    padding-left: 3.5rem;
+    float: right;
 }
 
 .modal-about-me {

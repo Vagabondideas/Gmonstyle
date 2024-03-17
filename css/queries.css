@@ -85,6 +85,10 @@
         padding: 0 1.5rem 0rem 0rem;
     }
 
+    .hero-img {
+        padding: 0 0rem 0rem 1.5rem;
+    }
+
     .btn-contact-link {
         font-size: 1.25rem;
         background-color: #401c93ff;
