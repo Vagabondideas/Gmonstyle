@@ -19,14 +19,11 @@
             href="https://fonts.googleapis.com/css2?family=Belleza&family=Lato:wght@300;400;700&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="css/style.css" />
         <script
             src="https://kit.fontawesome.com/098a0a9173.js"
             crossorigin="anonymous"
         ></script>
-
-        <link rel="stylesheet" href="css/general.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/queries.css" />
 
         <title>
             "Affichez votre personnalité | Marie-Josée Gagné, Styliste
@@ -47,71 +44,74 @@
                ]
             },
 
+
             {
               "@context": "http://schema.org",
               "@graph": [
-                {
+               {
                   "@type": "Article",
-                  "name": "G-monstyle",
+                  "name": "Hero",
                   "author": {
                     "@type": "Person",
                     "name": "Marie-Josée Gagné"
                   },
-                  "image": "http://www.gmonstyle.ca/images/about-798x1200.png",
+                  "articleSection": "Affichez votre personnalité",
+                  "image": "http://www.gmonstyle.ca/images/hero-650x971.png",
+
+                  "articleBody": "Bonjour, je suis Marie-Josée Gagné et G mon style!",
+                  "url": "http://www.gmonstyle.ca/"
+                },
+                {
+                  "@type": "Article",
+                  "name": "Marie-Josée Gagné",
+                  "author": {
+                    "@type": "Person",
+                    "name": "Marie-Josée Gagné"
+                  },
+                  "image": "http://www.gmonstyle.ca/images/marie-josée-gagné.png",
                   "articleSection": "Mon approche:",
                   "articleBody": "Bonjour, je suis Marie-Josée Gagné et G mon style!",
                   "url": "http://www.gmonstyle.ca/"
                 },
                 {
                   "@type": "Article",
-                  "name": "G-monstyle",
-                  "author": {
-                    "@type": "Person",
-                    "name": "Marie-Josée Gagné"
-                  },
-                  "articleSection": "Mes services:",
-                  "url": "http://www.gmonstyle.ca/"
-                },
-                {
-                  "@type": "Article",
-                  "name": "G-monstyle",
+                  "name": "Mes services",
                   "author": {
                     "@type": "Person",
                     "name": "Marie-Josée Gagné"
                   },
                   "articleSection": "Analyse de la silhouette",
+                  "image": "http://www.gmonstyle.ca/images/serv-1-silhouette-1280x853.png",
                   "articleBody": "Découvrez les couleurs qui s'harmonisent parfaitement avec votre teint grâce à un test de colorimétrie",
                   "url": "http://www.gmonstyle.ca/"
                 },
                 {
                   "@type": "Article",
-                  "name": "G-monstyle",
+                  "name": "Mes services",
                   "author": {
                     "@type": "Person",
                     "name": "Marie-Josée Gagné"
                   },
                   "articleSection": "Mise à jour de la garde-robe",
+                  "image": "http://www.gmonstyle.ca/images/serv-2-panderie-1280x853.png",
                   "articleBody": "Redonner une touche de fraîcheur et de modernité à votre collection en créant de nouveaux looks",
                   "url": "http://www.gmonstyle.ca/"
                 },
                 {
                   "@type": "Article",
-                  "name": "G-monstyle",
+                  "name": "Mes services",
                   "author": {
                     "@type": "Person",
                     "name": "Marie-Josée Gagné"
                   },
                   "articleSection": "Magasinage accompagné",
+                  "image": "http://www.gmonstyle.ca/images/serv-3-magasinage-1280x853.png",
                   "articleBody": "Économisez un temps précieux en me confiant la recherche des vêtements dont vous avez besoin",
                   "url": "http://www.gmonstyle.ca/",
-                  "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "Témoignages"
-                  }
                 },
                 {
                   "@type": "Article",
-                  "name": "G-monstyle",
+                  "name": "Contact",
                   "author": {
                     "@type": "Person",
                     "name": "Marie-Josée Gagné"
@@ -169,11 +169,11 @@
         </header>
 
         <main>
-            <section class="section-hero section-padding">
+            <article class="section-hero section-padding">
                 <div class="container">
-                    <div class="sub-header-box">
+                    <articleSection class="sub-header-box">
                         <h2 class="sub-header">Affichez votre personnalité</h2>
-                    </div>
+                    </articleSection>
                     <div class="flex-hero-container">
                         <div class="hero-text-box">
                             <div class="wraper hero-img-box">
@@ -183,51 +183,56 @@
                                     src="images/hero-650x971.png"
                                 />
                             </div>
+                            <articleBody>
+                                <h1 class="name">Marie-Josée Gagné</h1>
+                                <h2 class="title">
+                                    Styliste personnelle - pour elle
+                                </h2>
 
-                            <h1 class="name">Marie-Josée Gagné</h1>
-                            <h2 class="title">
-                                Styliste personnelle - pour elle
-                            </h2>
+                                <p class="mission">
+                                    Prête à composer votre look unique
+                                    aujourd'hui? Qu'est-ce qui vous inspire dans
+                                    votre choix vestimentaire? Vos vêtements ne
+                                    sont pas juste des tissus, ce sont des
+                                    expressions de vos émotions et de votre
+                                    personnalité. Ils parlent pour vous, ils
+                                    vous représentent. Avec moi à vos côtés, je
+                                    vous aiderai à trouver les pièces qui
+                                    mettront en valeur votre silhouette et
+                                    feront briller votre personnalité. Choisir
+                                    sa tenue devrait être une occasion de
+                                    célébration pour vous exprimer et dire vous
+                                    aussi: G mon Style!
+                                </p>
 
-                            <p class="mission">
-                                Prête à composer votre look unique aujourd'hui?
-                                Qu'est-ce qui vous inspire dans votre choix
-                                vestimentaire? Vos vêtements ne sont pas juste
-                                des tissus, ce sont des expressions de vos
-                                émotions et de votre personnalité. Ils parlent
-                                pour vous, ils vous représentent. Avec moi à vos
-                                côtés, je vous aiderai à trouver les pièces qui
-                                mettront en valeur votre silhouette et feront
-                                briller votre personnalité. Choisir sa tenue
-                                devrait être une occasion de célébration pour
-                                vous exprimer et dire vous aussi: G mon Style!
-                            </p>
-
-                            <a class="btn-contact-link" href="#contact"
-                                >Demandez un conseil</a
-                            >
+                                <a class="btn-contact-link" href="#contact"
+                                    >Demandez un conseil</a
+                                >
+                            </articleBody>
                         </div>
                     </div>
                 </div>
-            </section>
+            </article>
 
-            <section class="about-section section-padding">
+            <article class="section-mon-approche section-padding">
                 <div class="container">
                     <div class="sub-header-box">
-                        <h2 class="sub-header" id="about">Mon approche:</h2>
+                        <h2 class="mon-approche sub-header" id="about">
+                            Mon approche:
+                        </h2>
                     </div>
                     <div class="flex-about-container">
                         <div class="wrapper about-img-box">
                             <img
                                 class="about-img"
-                                rel="photo de marie-josée gagné"
-                                src="images/about-798x1200.png"
+                                src="images/marie-josée-gagné.png"
+                                alt="Marie-Josée Gagné photo"
                             />
 
-                            <div class="about-text-box">
+                            <articlebody class="about-text-box">
                                 <p class="text">
                                     Bonour, je suis Marie-Josée Gagné et G mon
-                                    Style!
+                                    style!
                                 </p>
                                 <p class="text">
                                     Animée par la volonté d'inspirer les femmes
@@ -258,42 +263,14 @@
                                     occasions sans dépenser une fortune. Votre
                                     satisfaction est ma priorité.
                                 </p>
-
-                                <!-- <div class="center-me">
-                                    <button
-                                        class="btn-more-about-me"
-                                        onclick="openMore(); hideBtnMore()"
-                                    >
-                                        Voir Plus
-                                    </button>
-                                </div>
-
-                                <div class="modal-about-me hidden">
-                                    <p class="text">
-                                        En tant que styliste, je crois fermement que nos vêtemenst sont une forme d'expression personnelle. Porter des tenues qui nous ressemblent nous rend plus authentiques et confiantes. 
-                                    </p>
-
-                                    <p class="text">
-                                        Mes services sont conçus pour vous faire gagner du temps et économiser de l'argent. J'ai hâte de commencer cette aventure avec vous et de vous aider à révéler le meilleur de votre style personnel. 
-                                    </p>
-
-                                    <div class="center-me">
-                                        <button
-                                            class="btn-close-modal-about-me btn-close-modal"
-                                            onclick="closeMore(); showMore()"
-                                        >
-                                            Voir Moins
-                                        </button>
-                                    </div>
-                                </div> -->
-                            </div>
+                            </articlebody>
                         </div>
                     </div>
                 </div>
-            </section>
+            </article>
 
-            <section class="services-section section-padding">
-                <div class="container">
+            <article class="services-section section-padding">
+                <article class="container">
                     <div class="sub-header-box">
                         <h2 class="sub-header" id="services">Mes services:</h2>
                     </div>
@@ -326,12 +303,12 @@
                     </div>
 
                     <div class="grid-services-container grid-padding">
-                        <div class="serv1-box">
+                        <articleSection class="serv1-box">
                             <h3 class="service-header" id="silhouette">
                                 Analyse de la silhouette
                             </h3>
 
-                            <div class="serv1-img-box">
+                            <articleBody class="serv1-img-box">
                                 <div class="center-me">
                                     <img
                                         class="service-img"
@@ -339,20 +316,22 @@
                                         src="images/serv1-silhouette-1280x853.png"
                                     />
                                 </div>
-                            </div>
-
-                            <p class="text">
-                                Avec une analyse détaillée de votre silhouette,
-                                je vous dévoile les coupes, motifs et textures
-                                qui vous metteront en valeur. Fini les
-                                incertitudes vertimentaires.
-                            </p>
-                            <p class="text">
-                                En plus de comprendre votre morphologie,
-                                découvez les couleurs qui s'harmonisent
-                                parfaitement avec votre teint grâce à un test de
-                                colorimétrie.
-                            </p>
+                            </articleBody>
+                            <articleBody>
+                                <p class="text">
+                                    Avec une analyse détaillée de votre
+                                    silhouette, je vous dévoile les coupes,
+                                    motifs et textures qui vous metteront en
+                                    valeur. Fini les incertitudes
+                                    vertimentaires.
+                                </p>
+                                <p class="text">
+                                    En plus de comprendre votre morphologie,
+                                    découvez les couleurs qui s'harmonisent
+                                    parfaitement avec votre teint grâce à un
+                                    test de colorimétrie.
+                                </p>
+                            </articleBody>
 
                             <div class="open-serv1">
                                 <div class="center-me">
@@ -369,18 +348,7 @@
                                 </div>
                             </div>
 
-                            <div class="modal-1 hidden-1 modal">
-                                <p class="text">
-                                    <!-- En plus de vous aider à bien comprendre
-                                    votre morphologie, je vous ferai découvrir
-                                    les couleurs associées à votre teint grâce à
-                                    un test de colorimétrie que nous ferons
-                                    durant la rencontre. Vous prendrez plaisir,
-                                    tout comme moi, à réaliser ce test qui donne
-                                    des résultats assez convaincants.
-                                </p> -->
-                                </p>
-
+                            <articleBody class="modal-1 hidden-1 modal">
                                 <p class="text">
                                     Ce service inclut également la remise d'un
                                     document de référence après notre rencontre.
@@ -401,14 +369,14 @@
                                 <div class="serv-separator">
                                     <hr class="serv-separator-rule" />
                                 </div>
-                            </div>
-                        </div>
+                            </articleBody>
+                        </articleSection>
 
-                        <div class="serv2-box">
+                        <articleSection class="serv2-box">
                             <h3 class="service-header" id="penderie">
                                 Mise à jour de la garde-robe
                             </h3>
-                            <div class="serv2-img-box">
+                            <articleBody class="serv2-img-box">
                                 <div class="center-me">
                                     <img
                                         class="service-img"
@@ -416,22 +384,25 @@
                                         src="images/serv2-panderie-1280x853.png"
                                     />
                                 </div>
-                            </div>
-
-                            <p class="text">
-                                Vous avez ressenti le sentiment de "ne rien
-                                avoir à vous mettre" malgré une garde-robe
-                                débourtante de vêtements? Cela vous est-il déjà
-                                arrivé? Ne vous inquiétez pas, j'ai la solution.
-                            </p>
-                            <p class="text">
-                                Profitez de l'opportunité pour actualiser votre
-                                garde-robe saisonnière. En quelques heures, je
-                                peux redonner une touche de fraîcheur et de
-                                modernité à votre collection en créant des
-                                nouveaux looks à partir des trésors que vous
-                                possédez déjà, mais que vous ignorez.
-                            </p>
+                            </articleBody>
+                            <articleBody>
+                                <p class="text">
+                                    Vous avez ressenti le sentiment de "ne rien
+                                    avoir à vous mettre" malgré une garde-robe
+                                    débourtante de vêtements? Cela vous est-il
+                                    déjà arrivé? Ne vous inquiétez pas, j'ai la
+                                    solution.
+                                </p>
+                                <p class="text">
+                                    Profitez de l'opportunité pour actualiser
+                                    votre garde-robe saisonnière. En quelques
+                                    heures, je peux redonner une touche de
+                                    fraîcheur et de modernité à votre collection
+                                    en créant des nouveaux looks à partir des
+                                    trésors que vous possédez déjà, mais que
+                                    vous ignorez.
+                                </p>
+                            </articleBody>
 
                             <div class="open-serv2">
                                 <div class="center-me">
@@ -448,7 +419,7 @@
                                 </div>
                             </div>
 
-                            <div class="modal-2 hidden-2 modal">
+                            <articleBody class="modal-2 hidden-2 modal">
                                 <p class="text">
                                     Ensemble nous ferons un tri de vos vêtements
                                     pour la saison en cours. Vous souhaiterez
@@ -486,14 +457,14 @@
                                 <div class="serv-separator">
                                     <hr class="serv-separator-rule" />
                                 </div>
-                            </div>
-                        </div>
+                            </articleBody>
+                        </articleSection>
 
-                        <div class="serv3-box">
+                        <articleSection class="serv3-box">
                             <h3 class="service-header" id="magasinage">
                                 Magasinage accompagné
                             </h3>
-                            <div class="serv3-img-box">
+                            <articleBody class="serv3-img-box">
                                 <div class="center-me">
                                     <img
                                         class="service-img"
@@ -501,22 +472,24 @@
                                         src="images/serv3-magasinage-1280x853.png"
                                     />
                                 </div>
-                            </div>
+                            </articleBody>
 
-                            <p class="text">
-                                Il vous est arrivé de passer des heures en
-                                magasin pour en ressortir sans rien avoir
-                                trouvé? Économisez un temps précieux en me
-                                confiant la recherche des vêtements dont vous
-                                avez besoin.
-                            </p>
+                            <articleBody>
+                                <p class="text">
+                                    Il vous est arrivé de passer des heures en
+                                    magasin pour en ressortir sans rien avoir
+                                    trouvé? Économisez un temps précieux en me
+                                    confiant la recherche des vêtements dont
+                                    vous avez besoin.
+                                </p>
 
-                            <p class="text">
-                                Que se soit pour une occasion spéciale ou
-                                simplement pour compléter votre garde-robe, je
-                                vous offre une expérience de magasinage agréable
-                                et efficace.
-                            </p>
+                                <p class="text">
+                                    Que se soit pour une occasion spéciale ou
+                                    simplement pour compléter votre garde-robe,
+                                    je vous offre une expérience de magasinage
+                                    agréable et efficace.
+                                </p>
+                            </articleBody>
 
                             <div class="open-serv3">
                                 <div class="center-me">
@@ -529,7 +502,7 @@
                                 </div>
                             </div>
 
-                            <div class="modal-3 hidden-3 modal">
+                            <articleBody class="modal-3 hidden-3 modal">
                                 <p class="text">
                                     Après avoir recueilli toutes les
                                     informations nécessaires, je pars seul en
@@ -556,13 +529,13 @@
                                         Voir Moins
                                     </button>
                                 </div>
-                            </div>
-                        </div>
+                            </articleBody>
+                        </articleSection>
                     </div>
-                </div>
-            </section>
+                </article>
+            </article>
 
-            <section class="temoignages-section section-padding">
+            <article class="temoignages-section section-padding">
                 <div class="container">
                     <div class="sub-header-box">
                         <h2 class="sub-header" id="services">Témoignages:</h2>
@@ -604,7 +577,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </article>
 
             <section class="contact-section section-padding">
                 <div class="container">
