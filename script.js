@@ -1,5 +1,3 @@
-// "use strict";
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -14,8 +12,6 @@ document.querySelectorAll(".nav-link").forEach((n) =>
         navMenu.classList.remove("active");
     })
 );
-
-// *********  MORE ABOUT ME  ***********
 
 // *********** SERVICES DOM FUNCTIONS ************
 const viewButtons = document.querySelectorAll(".show-more-btn");
