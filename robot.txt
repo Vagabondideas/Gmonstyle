@@ -1,0 +1,14 @@
+# Allow all bots to access everything
+User-agent: *
+Disallow:
+
+# Block specific bots from accessing certain directories
+User-agent: Googlebot
+Disallow: /private/
+
+User-agent: Bingbot
+Disallow: /sensitive/
+
+# Allow a specific bot to access a specific directory
+User-agent: *
+Allow: /public/
